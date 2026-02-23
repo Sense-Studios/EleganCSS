@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Your Project Name</title>
+    <meta name="description" content="A brief description of your page for search engines.">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+  <nav class="fixed">
+    <h1 class="logo">Elegan<mark><em>CSS</em></mark></h1>
+    <menu>
+      <li><a href="#colorsystem">colorsystem</a></li>
+      <li><a href="#headers">headers</a></li>
+      <li><a href="#article">article</a></li>
+      <li><a href="#grid-system">grid-system</a></li>
+      <li><a href="#wells">wells</a></li>
+      <li><a href="#alerts">alerts</a></li>
+      <li><a href="#badges">badges</a></li>
+      <li><a href="#callout">callout</a></li>
+      <li><a href="#forms">forms</a></li>
+      <li><a href="#disabled">disabled</a></li>
+      <li><a href="#cards">cards</a></li>
+      <li><a href="#dialogs">Modal</a></li>
+      <li><a href="#progress">Progress</a></li>
+      <li><a href="#code">Code</a></li>
+      <li><a href="#quotes">quotes</a></li>
+      <li><a href="#nav">nav</a></li>
+      <li><a href="#lists">lists</a></li>
+      <li><a href="#description_lists">description list</a></li>      
+      <li><a href="#details">details</a></li>      
+      <li><a href="#helpers">helpers</a></li>
+      <li><a href="#images">images</a></li>      
+    </menu>
+  </nav>
+
+  <main>
+
+    <h2> 1. color system </h2>
+    <h3> informative colors </h3>
+    <div class="grid g4">
+      <div class="card">
+        <h5 class="primary text-center">Primary <span class="inverted">inverted</span></h5>
+        <div style="background-color: black;">&nbsp;</div>
+        <div style="background-color:var(--primary-darkest);">&nbsp;</div>
+        <div style="background-color:var(--primary-darker);">&nbsp;</div>
+        <div style="background-color:var(--primary-dark);">&nbsp;</div>
+        <div style="background-color:var(--primary);">&nbsp;</div>
+        <div style="background-color:var(--primary-light);">&nbsp;</div>
+        <div style="background-color:var(--primary-lighter);">&nbsp;</div>
+        <div style="background-color:var(--primary-lightest);">&nbsp;</div>
+        <div style="background-color:white;">&nbsp;</div>
+      </div>
+
+      <div class="card">
+        <h5 class="secondary text-center">Secondary <span class="inverted">inverted</span></h5>
+        <div style="background-color: black;">&nbsp;</div>
+        <div style="background-color:var(--secondary-darkest);">&nbsp;</div>
+        <div style="background-color:var(--secondary-darker);">&nbsp;</div>
+        <div style="background-color:var(--secondary-dark);">&nbsp;</div>
+        <div style="background-color:var(--secondary);">&nbsp;</div>
+        <div style="background-color:var(--secondary-light);">&nbsp;</div>
+        <div style="background-color:var(--secondary-lighter);">&nbsp;</div>
+        <div style="background-color:var(--secondary-lightest);">&nbsp;</div>
+        <div style="background-color:white;">&nbsp;</div>
+      </div>
+
+        <div class="card">
+        <h5 class="accent text-center">Accent <span class="inverted">inverted</span></h5>
+        <div style="background-color: black;">&nbsp;</div>
+        <div style="background-color:var(--accent-darkest);">&nbsp;</div>
+        <div style="background-color:var(--accent-darker);">&nbsp;</div>
+        <div style="background-color:var(--accent-dark);">&nbsp;</div>
+        <div style="background-color:var(--accent);">&nbsp;</div>
+        <div style="background-color:var(--accent-light);">&nbsp;</div>
+        <div style="background-color:var(--accent-lighter);">&nbsp;</div>
+        <div style="background-color:var(--accent-lightest);">&nbsp;</div>
+        <div style="background-color:white;">&nbsp;</div>
+      </div>
+      <div class="card">
+        <h5 class="danger text-center">red <span class='inverted'>danger</span></h5>
+        <div style="background-color: black;">&nbsp;</div>
+        <div style="background-color:var(--danger-darkest);">&nbsp;</div>
+        <div style="background-color:var(--danger-darker);">&nbsp;</div>
+        <div style="background-color:var(--danger-dark);">&nbsp;</div>
+        <div style="background-color:var(--danger);">&nbsp;</div>
+        <div style="background-color:var(--danger-light);">&nbsp;</div>
+        <div style="background-color:var(--danger-lighter);">&nbsp;</div>
+        <div style="background-color:var(--danger-lightest);">&nbsp;</div>
+        <div style="background-color:white;">&nbsp;</div>
+      </div>
+      <div class="card">
+        <h5 class="info text-center">info <span class='inverted'>info</span></h5>
+        <div style="background-color: black;">&nbsp;</div>
+        <div style="background-color:var(--info-darkest);">&nbsp;</div>
+        <div style="background-color:var(--info-darker);">&nbsp;</div>
+        <div style="background-color:var(--info-dark);">&nbsp;</div>
+        <div style="background-color:var(--info);">&nbsp;</div>
+        <div style="background-color:var(--info-light);">&nbsp;</div>
+        <div style="background-color:var(--info-lighter);">&nbsp;</div>
+        <div style="background-color:var(--info-lightest);">&nbsp;</div>
+        <div style="background-color:white;">&nbsp;</div>
+      </div>
+      <div class="card">
+        <h5 class="success text-center">green <span class='inverted'>success</span></h5>
+        <div style="background-color: black;">&nbsp;</div>
+        <div style="background-color:var(--success-darkest);">&nbsp;</div>
+        <div style="background-color:var(--success-darker);">&nbsp;</div>
+        <div style="background-color:var(--success-dark);">&nbsp;</div>
+        <div style="background-color:var(--success);">&nbsp;</div>
+        <div style="background-color:var(--success-light);">&nbsp;</div>
+        <div style="background-color:var(--success-lighter);">&nbsp;</div>
+        <div style="background-color:var(--success-lightest);">&nbsp;</div>
+        <div style="background-color:white;">&nbsp;</div>
+      </div>
+      <div class="card">
+        <h5 class="warning text-center">yellow <span class='inverted'>warning</span></h5>
+        <div style="background-color: black;">&nbsp;</div>
+        <div style="background-color:var(--warning-darkest);">&nbsp;</div>
+        <div style="background-color:var(--warning-darker);">&nbsp;</div>
+        <div style="background-color:var(--warning-dark);">&nbsp;</div>
+        <div style="background-color:var(--warning);">&nbsp;</div>
+        <div style="background-color:var(--warning-light);">&nbsp;</div>
+        <div style="background-color:var(--warning-lighter);">&nbsp;</div>
+        <div style="background-color:var(--warning-lightest);">&nbsp;</div>
+        <div style="background-color:white;">&nbsp;</div>
+      </div>
+      <div class="card">
+        <h5 class="text-center">grey <span class='inverted'>default</span></h5>
+        <div style="background-color: black;">&nbsp;</div>
+        <div style="background-color:var(--grey-darkest);">&nbsp;</div>
+        <div style="background-color:var(--grey-darker);">&nbsp;</div>
+        <div style="background-color:var(--grey-dark);">&nbsp;</div>
+        <div style="background-color:var(--grey);">&nbsp;</div>
+        <div style="background-color:var(--grey-light);">&nbsp;</div>
+        <div style="background-color:var(--grey-lighter);">&nbsp;</div>
+        <div style="background-color:var(--grey-lightest);">&nbsp;</div>
+        <div style="background-color:white;">&nbsp;</div>
+      </div>
+    </div>
+
+      light 
+      dark 
+
+    <br>
+    <br>
+
+    <h3> support colors </h3>
+    <div class="grid g7">
+      <div class="card">
+        <h6 class="french-lilac text-center">French Lilac</span></h6>
+        <div style="background-color:var(--purple-darkest);">&nbsp;</div>
+        <div style="background-color:var(--purple-darker);">&nbsp;</div>
+        <div style="background-color:var(--purple-dark);">&nbsp;</div>
+        <div style="background-color:var(--purple);">&nbsp;</div>
+        <div style="background-color:var(--purple-light);">&nbsp;</div>
+        <div style="background-color:var(--purple-lighter);">&nbsp;</div>
+        <div style="background-color:var(--purple-lightest);">&nbsp;</div>
+        <div style="background-color:white;">&nbsp;</div>
+      </div>
+        <div class="card">
+        <h6 class="flamingo text-center">Flamingo</span></h6>
+        <div style="background-color:var(--pink-darkest);">&nbsp;</div>
+        <div style="background-color:var(--pink-darker);">&nbsp;</div>
+        <div style="background-color:var(--pink-dark);">&nbsp;</div>
+        <div style="background-color:var(--pink);">&nbsp;</div>
+        <div style="background-color:var(--pink-light);">&nbsp;</div>
+        <div style="background-color:var(--pink-lighter);">&nbsp;</div>
+        <div style="background-color:var(--pink-lightest);">&nbsp;</div>
+        <div style="background-color:white;">&nbsp;</div>
+      </div>
+        <div class="card">
+        <h6 class="cloud-dancer text-center">Cloud dancer</span></h6>
+        <div style="background-color:var(--cloud-dancer-darkest);">&nbsp;</div>
+        <div style="background-color:var(--cloud-dancer-darker);">&nbsp;</div>
+        <div style="background-color:var(--cloud-dancer-dark);">&nbsp;</div>
+        <div style="background-color:var(--cloud-dancer);">&nbsp;</div>
+        <div style="background-color:var(--cloud-dancer-light);">&nbsp;</div>
+        <div style="background-color:var(--cloud-dancer-lighter);">&nbsp;</div>
+        <div style="background-color:var(--cloud-dancer-lightest);">&nbsp;</div>
+        <div style="background-color:white;">&nbsp;</div>
+      </div>
+        <div class="card">
+        <h6 class="blue-fusion text-center">Blue fusion</span></h6>
+        <div style="background-color:var(--blue-fusion-darkest);">&nbsp;</div>
+        <div style="background-color:var(--blue-fusion-darker);">&nbsp;</div>
+        <div style="background-color:var(--blue-fusion-dark);">&nbsp;</div>
+        <div style="background-color:var(--blue-fusion);">&nbsp;</div>
+        <div style="background-color:var(--blue-fusion-light);">&nbsp;</div>
+        <div style="background-color:var(--blue-fusion-lighter);">&nbsp;</div>
+        <div style="background-color:var(--blue-fusion-lightest);">&nbsp;</div>          
+        <div style="background-color:white;">&nbsp;</div>
+      </div>
+      <div class="card">
+        <h6 class="coral-sea text-center">Coral sea</span></h6>
+        <div style="background-color:var(--coral-sea-darkest);">&nbsp;</div>
+        <div style="background-color:var(--coral-sea-darker);">&nbsp;</div>
+        <div style="background-color:var(--coral-sea-dark);">&nbsp;</div>
+        <div style="background-color:var(--coral-sea);">&nbsp;</div>
+        <div style="background-color:var(--coral-sea-light);">&nbsp;</div>
+        <div style="background-color:var(--coral-sea-lighter);">&nbsp;</div>
+        <div style="background-color:var(--coral-sea-lightest);">&nbsp;</div>          
+        <div style="background-color:white;">&nbsp;</div>
+      </div>
+      <div class="card">
+        <h6 class="coral-sea text-center">Derma green</span></h6>
+        <div style="background-color:var(--derma-green-darkest);">&nbsp;</div>
+        <div style="background-color:var(--derma-green-darker);">&nbsp;</div>
+        <div style="background-color:var(--derma-green-dark);">&nbsp;</div>
+        <div style="background-color:var(--derma-green);">&nbsp;</div>
+        <div style="background-color:var(--derma-green-light);">&nbsp;</div>
+        <div style="background-color:var(--derma-green-lighter);">&nbsp;</div>
+        <div style="background-color:var(--derma-green-lightest);">&nbsp;</div>          
+        <div style="background-color:white;">&nbsp;</div>
+      </div>
+      <div class="card">
+        <h6 class="coral-sea text-center">Derma pink</span></h6>
+        <div style="background-color:var(--derma-pink-darkest);">&nbsp;</div>
+        <div style="background-color:var(--derma-pink-darker);">&nbsp;</div>
+        <div style="background-color:var(--derma-pink-dark);">&nbsp;</div>
+        <div style="background-color:var(--derma-pink);">&nbsp;</div>
+        <div style="background-color:var(--derma-pink-light);">&nbsp;</div>
+        <div style="background-color:var(--derma-pink-lighter);">&nbsp;</div>
+        <div style="background-color:var(--derma-pink-lightest);">&nbsp;</div>          
+        <div style="background-color:white;">&nbsp;</div>
+      </div>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <h1> Header 1 </h1>
+    <h2> Header 2 </h2>
+    <h2 class="danger"> Header 2 </h2>
+    <h2 class="danger inverted"> Header 2 </h2>
+    <h3> Header 3 </h3>
+    <h3 class="info"> Header 3 </h3>
+    <h3 class="info inverted"> Header 3 </h3>  
+    <h4> Header 4 </h4>
+    <h5> Header 5 </h5>
+    <h6> Header 6 </h6>
+
+    <br>
+    <hr>
+    <br>
+
+    <article>
+      <h1>Ut delectus quasi est adipisci recusandae et corrupti praesentium. </h1>
+      <p>Lorem ipsum dolor sit amet. 33 explicabo rationeEst aspernatur cum eaque 
+        deleniti vel explicabo consequuntur. Et quaerat voluptatum et internos 
+        repudiandae33 repudiandae qui dolore blanditiis 33 totam ducimus. 
+        Ut galisum praesentiumEt <mark>doloremque et repellat explicabo</mark>ut repellendus 
+        voluptas et dolor omnis. Qui vero obcaecatiQui quaerat aut velit atque et 
+        aliquam autem aut adipisci quod. Et nisi nesciunt qui facilis magniId explicabo 
+        ab amet galisum ab ratione obcaecati ut aspernatur voluptate qui voluptatem maxime.
+        Est unde ducimusHic minima et delectus velit ea nesciunt quibusdam sit velit 
+        inventore in eveniet animi id dolores animi. Cum inventore velit ut 
+        molestias consectetur <a href="https://www.loremipzum.com" target="_blank">
+        Rem provident cum temporibus iusto et eligendi aliquam cum labore veniam</a>. 
+        Et excepturi sintqui sapiente ea ipsam dignissimos? Aut enim reprehenderit 
+        et veniam magnam <strong>Hic cupiditate</strong>. 
+        Et molestias corrupti est nihil nostrum <em>Ex molestiae rem odit suscipit 
+        ea iusto delectus in veniam quia</em>. Et delectus possimus sit voluptatum 
+        saepeQuo accusamus in dolores accusamus et obcaecati culpa sed minus 
+        quibusdam aut ullam quae. </p>
+    </article>
+
+    <section>
+      <blockquote cite="https://www.loremipzum.com">
+        Est dolore molestiae est culpa veniam ut autem dolores non temporibus 
+        incidunt in voluptatibus commodi. 
+      </blockquote>
+    </section>
+
+    <br>
+    <hr>
+    <br>
+
+    <article>
+      <h2>The need for EleganCSS. </h2>
+      <p>I love Bootstrap. I have been using bootstrap since it infancy, and 
+        I think I have dreamt in bootstrap on more then one occasion.
+        However, the world has moved on, since the days of <code>margin: auto</code> and <code>float: left</code>.
+        I don't think I have to tell anyone that With the introduction of Flexbox and Grid, CSS has changed.
+        There is no more need for a rigid 12-colomn grid anymore. We are not Sumerians, we can have 
+        seven columns if we really want. Or 13.<br>
+        We still have a need for styling though, and who can keep up with all the innovation the W3C
+        has been putting out there the last five years. There has been native functions added to CSS 
+        monthly and browsers have been picking them up with great speed. There are only few of us who
+        really want to read all the "five things you didn't know CSS could do" and "Are you still writing
+        CSS as if it was 2015". They are pedantic. Still, wouldn't it be nice to have a modern CSS file 
+        that you can drop in, and does almost anything that bootstrap does, without javascript.<br>
+        That is where ElegenCSS comes in. It is a drop-in css that takes care of almost all your CSS 
+        needs with a single configuration.<br> 
+        It takes what was good from bootstrap, but translates it to modern HTML standards and practices.
+        That means, that if you write your html well, your styling will follow. No need for nested divs
+        to set up that pesky horizontal form. Just add the correct class to the fieldset, section or 
+        form itself and it works. Straight out of the box and without hassle.<br>
+        It doesn't need to be backward compatible, because there is no backlog. You don't need to learn
+        color theorie, because with oklhc all your color needs are taken care of and we simply calculate
+        all derative colors you might require. 
+        </p>
+    </article>
+    <section>
+      <p>
+        Features: 
+        <ul>
+          <li>dynamic oklab color</li>          
+          <li>no javascript</li>
+          <li>
+            <i class="test-icon"></i> no bloat (who needs 200 icons anyway?)
+            download the svg from https://icons.getbootstrap.com/
+          </li>
+          <li>modal</li>          
+          <li>mark</li>
+          <li>modern (we're not even thinking about ie anymore)</li>
+          <li>golden ration grid</li>
+          <li>bootstrap native</li>
+          <li>feature complete</li>
+          <li>no nonsense</li>
+          <li>humor</li>
+        </ul>
+      </p>
+    </section>
+
+    <br>
+    <hr>
+    <br>
+
+    <section>
+      <h1>Code</h1>
+      <pre><code>
+      &lt;!-- Ad dolorem sunt ut explicabo earum. --&gt;
+      &lt;obcaecati&gt;Qui magni omnis.&lt;/obcaecati&gt;
+      &lt;rem&gt;Ab quia sunt id quidem provident.&lt;/rem&gt;
+      &lt;dolorem&gt;Est modi saepe qui mollitia vero et minus modi.&lt;/dolorem&gt;
+      <br></code></pre>
+    
+      <h1>Grid</h1>
+      <h3>Rem facere minus in vero mollitia qui necessitatibus commodi. </h3>
+      <p>Et rerum internosEt incidunt sit adipisci molestiae. 
+      Qui exercitationem aliquidCum eveniet ut quia ipsam? Id laboriosam 
+      laboriosam rem sunt fugaEt corrupti aut animi corrupti et adipisci 
+      nihil hic autem fugiat. Ut suscipit labore qui totam recusandaeSit natus 
+      aut quidem galisum ex nihil esse. Quo minus distinctio sed voluptatum aliquam 
+      <a href="https://www.loremipzum.com" target="_blank">Qui galisum et 
+      tempore dolores</a> eos quidem beatae ut sint voluptatibus quo autem 
+      laudantium. Hic exercitationem expedita vel iure fugiatQui fugiat ut odit neque 
+      et harum illum nam enim facilis! <mark class="blue"> In voluptatem nihilEum numquam cum numquam nobis </mark>. 
+      Aut soluta amet et minima debitisCum vero non quia pariatur in voluptas dolores? 
+      Ut iusto similique rem ducimus voluptasNon illo sed nihil possimus in tempora 
+      sapiente est rerum sint. Aut natus molestiae <em>Et sapiente cum esse debitis 
+      sed voluptatibus architecto</em> quo ipsam temporibus. In vero suntet quaerat 
+      et dolorum corrupti. Ut doloremque enimIn quasi sed quae consequatur est eaque 
+      impedit ut iure quia est accusamus voluptas qui aliquam illo! Ad velit ullamId 
+      blanditiis eos temporibus placeat ea dolorem omnis qui animi possimus. Et odio 
+      facere quo enim internosest rerum At vero eveniet. </p>
+    </section>
+
+    <div class="grid g1-2">
+      <div>
+      <p>Lorem ipsum dolor sit amet. 33 explicabo rationeEst aspernatur cum eaque 
+        deleniti vel explicabo consequuntur. Et quaerat voluptatum et internos 
+        repudiandae33 repudiandae qui dolore blanditiis 33 totam ducimus. 
+        Ut galisum praesentiumEt <mark>doloremque et repellat explicabo</mark>ut repellendus 
+        voluptas et dolor omnis. Qui vero obcaecatiQui quaerat aut velit atque et 
+        aliquam autem aut adipisci quod. Et nisi nesciunt qui facilis magniId explicabo 
+        ab amet galisum ab ratione obcaecati ut aspernatur</p>
+      </div>
+      <div>      <p>Lorem ipsum dolor sit amet. 33 explicabo rationeEst aspernatur cum eaque 
+        deleniti vel explicabo consequuntur. Et quaerat voluptatum et internos 
+        repudiandae33 repudiandae qui dolore blanditiis 33 totam ducimus. 
+        Ut galisum praesentiumEt <mark>doloremque et repellat explicabo</mark>ut repellendus 
+        voluptas et dolor omnis. Qui vero obcaecatiQui quaerat aut velit atque et 
+        aliquam autem aut adipisci quod. Et nisi nesciunt qui facilis magniId explicabo 
+        ab amet galisum ab ratione obcaecati ut aspernatur voluptate qui voluptatem maxime.
+        Est unde ducimusHic minima et delectus velit ea nesciunt quibusdam sit velit 
+        inventore in eveniet animi id dolores animi. Cum inventore velit ut 
+        molestias consectetur <a href="https://www.loremipzum.com" target="_blank">
+        Rem provident cum temporibus iusto et eligendi aliquam cum labore veniam</a>. 
+        Et excepturi sintqui sapiente ea ipsam dignissimos? Aut enim reprehenderit 
+        et veniam magnam <strong>Hic cupiditate</strong>. 
+        Et molestias corrupti est nihil nostrum <em>Ex molestiae rem odit suscipit 
+        ea iusto delectus in veniam quia</em>. Et delectus possimus sit voluptatum 
+        saepeQuo accusamus in dolores accusamus et obcaecati culpa sed minus 
+        quibusdam aut ullam quae. </p>        
+      </div>
+    </div>
+    
+    <div class="grid g1-2-2">
+      <div>
+      <p>Lorem ipsum dolor sit amet. 33 explicabo rationeEst aspernatur cum eaque 
+        deleniti vel explicabo consequuntur. Et quaerat voluptatum et internos 
+        repudiandae33 repudiandae qui dolore blanditiis 33 totam ducimus. 
+        Ut galisum praesentiumEt <mark>doloremque et repellat explicabo</mark>ut repellendus 
+        voluptas et dolor omnis. Qui vero obcaecatiQui quaerat aut velit atque et 
+        aliquam autem aut adipisci quod. Et nisi nesciunt qui facilis magniId explicabo 
+        ab amet galisum ab ratione obcaecati ut aspernatur</p>
+      </div>
+      <div>      <p>Lorem ipsum dolor sit amet. 33 explicabo rationeEst aspernatur cum eaque 
+        deleniti vel explicabo consequuntur. Et quaerat voluptatum et internos 
+        repudiandae33 repudiandae qui dolore blanditiis 33 totam ducimus. 
+        Ut galisum praesentiumEt <mark>doloremque et repellat explicabo</mark>ut repellendus 
+        voluptas et dolor omnis. Qui vero obcaecatiQui quaerat aut velit atque et 
+        aliquam autem aut adipisci quod. Et nisi nesciunt qui facilis magniId explicabo 
+        ab amet galisum ab ratione obcaecati ut aspernatur voluptate qui voluptatem maxime.
+        Est unde ducimusHic minima et delectus velit ea nesciunt quibusdam sit velit 
+        inventore in eveniet animi id dolores animi. Cum inventore velit ut 
+        molestias consectetur <a href="https://www.loremipzum.com" target="_blank">
+        Rem provident cum temporibus iusto et eligendi aliquam cum labore veniam</a>. 
+        Et excepturi sintqui sapiente ea ipsam dignissimos? Aut enim reprehenderit 
+        et veniam magnam <strong>Hic cupiditate</strong>. 
+        Et molestias corrupti est nihil nostrum <em>Ex molestiae rem odit suscipit 
+        ea iusto delectus in veniam quia</em>. Et delectus possimus sit voluptatum 
+        saepeQuo accusamus in dolores accusamus et obcaecati culpa sed minus 
+        quibusdam aut ullam quae. </p>        
+      </div>
+      <div>      <p>Lorem ipsum dolor sit amet. 33 explicabo rationeEst aspernatur cum eaque 
+        deleniti vel explicabo consequuntur. Et quaerat voluptatum et internos 
+        repudiandae33 repudiandae qui dolore blanditiis 33 totam ducimus. 
+        Ut galisum praesentiumEt <mark>doloremque et repellat explicabo</mark>ut repellendus 
+        voluptas et dolor omnis. Qui vero obcaecatiQui quaerat aut velit atque et 
+        aliquam autem aut adipisci quod. Et nisi nesciunt qui facilis magniId explicabo 
+        ab amet galisum ab ratione obcaecati ut aspernatur voluptate qui voluptatem maxime.
+        Est unde ducimusHic minima et delectus velit ea nesciunt quibusdam sit velit 
+        inventore in eveniet animi id dolores animi. Cum inventore velit ut 
+        molestias consectetur <a href="https://www.loremipzum.com" target="_blank">
+        Rem provident cum temporibus iusto et eligendi aliquam cum labore veniam</a>. 
+        Et excepturi sintqui sapiente ea ipsam dignissimos? Aut enim reprehenderit 
+        et veniam magnam <strong>Hic cupiditate</strong>. 
+        Et molestias corrupti est nihil nostrum <em>Ex molestiae rem odit suscipit 
+        ea iusto delectus in veniam quia</em>. Et delectus possimus sit voluptatum 
+        saepeQuo accusamus in dolores accusamus et obcaecati culpa sed minus 
+        quibusdam aut ullam quae. </p>        
+      </div>
+    </div>
+    
+    <hr>
+    
+    <div class="grid g2">
+      <ul>
+        <li>Et commodi magni cum molestiae voluptas sit accusamus cumque. </li>
+        <li>Et corporis maiores aut nobis maiores quo eligendi vero. </li>
+        <li>Ut dolores iure ea deleniti quasi vel dolores nobis. </li>
+        <li>Qui distinctio expedita et iure commodi. </li>
+        <li>Ut eveniet quasi et commodi sunt nam cupiditate architecto et enim nihil. </li>
+      </ul>
+      <dl>
+        <dt><dfn>Sed molestiae laboriosam. </dfn></dt>
+        <dd>Aut eius cumque id dolore quia? </dd>
+        <dt><dfn>Ea voluptas praesentium. </dfn></dt>
+        <dd>Et exercitationem voluptas ut incidunt voluptatem ut veniam doloribus. </dd>
+        <dt><dfn>Ut sint error in magnam eius. </dfn></dt>
+        <dd>Quo provident rerum eum quidem obcaecati. </dd>
+      </dl>
+    </div>
+    
+    <hr>
+
+    <div class="grid g3">
+      <ol>
+        <li>Non reprehenderit placeat ab doloribus ipsa. </li>
+        <li>Aut laborum rerum 
+        eum soluta repellat non dignissimos velit et placeat vero. </li>
+      </ol>
+      <ul>
+        <li>Et commodi magni cum molestiae voluptas sit accusamus cumque. </li>
+        <li>Et corporis maiores aut nobis maiores quo eligendi vero. </li>
+        <li>Ut dolores iure ea deleniti quasi vel dolores nobis. </li>
+        <li>Qui distinctio expedita et iure commodi. </li>
+        <li>Ut eveniet quasi et commodi sunt nam cupiditate architecto et enim nihil. </li>
+      </ul>
+      <dl>
+        <dt><dfn>Sed molestiae laboriosam. </dfn></dt>
+        <dd>Aut eius cumque id dolore quia? </dd>
+        <dt><dfn>Ea voluptas praesentium. </dfn></dt>
+        <dd>Et exercitationem voluptas ut incidunt voluptatem ut veniam doloribus. </dd>
+        <dt><dfn>Ut sint error in magnam eius. </dfn></dt>
+        <dd>Quo provident rerum eum quidem obcaecati. </dd>
+      </dl>
+    </div>
+  
+  <br>
+  <hr>
+  <br>
+  <h1>Wells</h1>
+  <div class="well">
+    <p>laudantium. Hic exercitationem expedita vel iure fugiatQui fugiat ut odit neque 
+    et harum illum nam enim facilis! In voluptatem nihilEum numquam cum numquam nobis. 
+    Aut soluta amet et minima debitisCum vero non quia pariatur in voluptas dolores? 
+    Ut iusto similique rem ducimus voluptasNon illo sed nihil possimus in tempora 
+    sapiente est rerum sint. Aut natus molestiae <em>Et sapiente cum esse debitis 
+    sed voluptatibus architecto</em> quo ipsam temporibus. In vero suntet quaerat 
+    et dolorum corrupti. Ut doloremque enimIn quasi sed quae consequatur est eaque 
+    impedit ut iure quia est accusamus voluptas qui aliquam illo! Ad velit ullamId 
+    blanditiis eos temporibus placeat ea dolorem omnis qui animi possimus. Et odio 
+    facere quo enim internosest rerum At vero eveniet. </p>
+  </div>
+
+  <div class="well danger">
+    <p>laudantium. Hic exercitationem expedita vel iure fugiatQui fugiat ut odit neque 
+    et harum illum nam enim facilis! In voluptatem nihilEum numquam cum numquam nobis. 
+    Aut soluta amet et minima debitisCum vero non quia pariatur in voluptas dolores? 
+    Ut iusto similique rem ducimus voluptasNon illo sed nihil possimus in tempora 
+    sapiente est rerum sint. Aut natus molestiae <em>Et sapiente cum esse debitis 
+    sed voluptatibus architecto</em> quo ipsam temporibus. In vero suntet quaerat 
+    et dolorum corrupti. Ut doloremque enimIn quasi sed quae consequatur est eaque 
+    impedit ut iure quia est accusamus voluptas qui aliquam illo! Ad velit ullamId 
+    blanditiis eos temporibus placeat ea dolorem omnis qui animi possimus. Et odio 
+    facere quo enim internosest rerum At vero eveniet. </p>
+  </div>
+
+  <div class="well warning">
+    <p>laudantium. Hic exercitationem expedita vel iure fugiatQui fugiat ut odit neque 
+    et harum illum nam enim facilis! In voluptatem nihilEum numquam cum numquam nobis. 
+    Aut soluta amet et minima debitisCum vero non quia pariatur in voluptas dolores? 
+    Ut iusto similique rem ducimus voluptasNon illo sed nihil possimus in tempora 
+    sapiente est rerum sint. Aut natus molestiae <em>Et sapiente cum esse debitis 
+    sed voluptatibus architecto</em> quo ipsam temporibus. In vero suntet quaerat 
+    et dolorum corrupti. Ut doloremque enimIn quasi sed quae consequatur est eaque 
+    impedit ut iure quia est accusamus voluptas qui aliquam illo! Ad velit ullamId 
+    blanditiis eos temporibus placeat ea dolorem omnis qui animi possimus. Et odio 
+    facere quo enim internosest rerum At vero eveniet. </p>
+  </div>
+
+  <div class="well success">
+    <p>laudantium. Hic exercitationem expedita vel iure fugiatQui fugiat ut odit neque 
+    et harum illum nam enim facilis! In voluptatem nihilEum numquam cum numquam nobis. 
+    Aut soluta amet et minima debitisCum vero non quia pariatur in voluptas dolores? 
+    Ut iusto similique rem ducimus voluptasNon illo sed nihil possimus in tempora 
+    sapiente est rerum sint. Aut natus molestiae <em>Et sapiente cum esse debitis 
+    sed voluptatibus architecto</em> quo ipsam temporibus. In vero suntet quaerat 
+    et dolorum corrupti. Ut doloremque enimIn quasi sed quae consequatur est eaque 
+    impedit ut iure quia est accusamus voluptas qui aliquam illo! Ad velit ullamId 
+    blanditiis eos temporibus placeat ea dolorem omnis qui animi possimus. Et odio 
+    facere quo enim internosest rerum At vero eveniet. </p>
+  </div>
+
+  <div class="well info">
+    <p>laudantium. Hic exercitationem expedita vel iure fugiatQui fugiat ut odit neque 
+    et harum illum nam enim facilis! In voluptatem nihilEum numquam cum numquam nobis. 
+    Aut soluta amet et minima debitisCum vero non quia pariatur in voluptas dolores? 
+    Ut iusto similique rem ducimus voluptasNon illo sed nihil possimus in tempora 
+    sapiente est rerum sint. Aut natus molestiae <em>Et sapiente cum esse debitis 
+    sed voluptatibus architecto</em> quo ipsam temporibus. In vero suntet quaerat 
+    et dolorum corrupti. Ut doloremque enimIn quasi sed quae consequatur est eaque 
+    impedit ut iure quia est accusamus voluptas qui aliquam illo! Ad velit ullamId 
+    blanditiis eos temporibus placeat ea dolorem omnis qui animi possimus. Et odio 
+    facere quo enim internosest rerum At vero eveniet. </p>
+  </div>
+
+  <br>
+  <hr>
+  <br>
+   
+  <div>
+    <h1> Alerts </h1>
+    <div class="alert"> This tekst is of info and should be heeded </div>
+    <div class="alert alert-danger"> Oh No! </div>
+    <div class="alert alert-warning"> The first step in avoiding a trap, is knowing of its existence! </div>
+    <div class="alert alert-success"> Great success! </div>
+    <div class="alert alert-info"> Here is some extra info that might be of use. </div>
+  </div>
+    
+  <br>
+  <hr>
+  <br>
+   
+
+  <h1> Forms </h1>
+  <fieldset>
+    <legend>Personalia:</legend>
+
+
+    <label for="fname">First name:</label>
+    <input type="text" value="this be my text"/>
+
+    <label for="lname">Last name:</label>
+    <input type="text" value="this be my text"/>
+
+  </fieldset>
+
+  <br>
+  <hr>
+  <br>
+   
+  <input type="text" placeholder="this be my text"/>
+  <br>
+  <input type="number" placeholder="01"/>
+  <br>
+  <input type="time" value="10:00"/>
+  <br>
+  <input type="date" value="this be my text"/>
+
+  <br>
+
+  <select>
+    <optgroup label="German Cars">
+      <option>option 1</option>
+      <option>option 2</option>
+    </optgroup>
+    <optgroup label="German Cars">
+      <option>option 3</option>
+    </optgroup>
+  </select>
+
+  <br>
+  
+  <textarea> this be my tekst area </textarea>
+  <br>
+
+  <h1> Details </h1> 
+  <details>
+    <summary>Epcot Center</summary>
+    <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+  </details>
+  
+  <h1>Description lists</h1>
+  <dl>
+    <dt>Coffee</dt>
+    <dd>Black hot drink</dd>
+    <dt>Milk</dt>
+    <dd>White cold drink</dd>
+  </dl>
+
+  <h1>Buttons</h1>
+  <button class="default">default</button>
+  <button class="primary">primary</button>
+  <button class="secondary">secondary</button>
+  <button class="danger">danger</button>
+  <button class="warning">warning</button>
+  <button class="success">success</button>
+  <button class="info">info</button>
+  <button class="light">light</button>
+  <button class="dark">dark</button>
+  <br>
+  <button>button</button>  
+  <button class="danger">cancel</button>  
+  <button class="info">next</button>  
+  <button class="success">ok</button>  
+  <button class="warning">are you sure?</button>
+
+  <br>
+  <button class="default sm">button</button>
+  <button class="default ">button</button>
+  <button class="default lg">button</button>
+  <br>
+
+  <div class="button-group">
+    <button>button</button>
+    <button>button</button>
+    <button>button</button>
+    <button>button</button>
+  </div>  
+
+  <br>
+  <br>
+  <br>
+  <h1> Modal </h1>
+  <button class="primary" commandfor="my_dialog"  command="show-modal">Open modal</button>
+  <dialog id="my_dialog">
+    <header><h3>header</h3><button class="danger close_btn" commandfor="my_dialog" command="close">×</button></header>
+    <p> Dialog content </p>
+    <footer>footer</footer>
+  </dialog>
+  <br>
+  <br>
+  <br>
+
+  </main>
+</body>
+</html>
