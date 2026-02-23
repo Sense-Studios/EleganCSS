@@ -1,3 +1,8 @@
+**I've build elegancss because I was so fed up with all the other solutions**
+
+![](https://imgs.xkcd.com/comics/standards.png)
+I know.
+
 I have a soft spot for **Bootstrap**. I’ve been using it since its infancy, and I’m pretty sure I’ve dreamt in columns and containers on more than one pathetic occasion. 
 
 But let’s be real: the world has moved on from the dark ages of `margin: auto` and sacrificial `float: left` hacks. With the arrival of **Flexbox** and **Grid**, the very fabric of CSS has shifted. We no longer need to be shackled to a rigid 12-column grid. We aren’t ancient Sumerians; if we want seven columns—or thirteen, just to watch the world burn—we can finally have them.
