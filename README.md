@@ -1,7 +1,11 @@
 **I've build elegancss because I was so fed up with all the other solutions**
 
 ![](https://imgs.xkcd.com/comics/standards.png)
+
+
 I know.
+
+### This is a work in progress
 
 I have a soft spot for **Bootstrap**. I’ve been using it since its infancy, and I’m pretty sure I’ve dreamt in columns and containers on more than one pathetic occasion. 
 
