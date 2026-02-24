@@ -1,1 +1,29 @@
-/* your own css additions go here, make them elegant */
+/* your own css additions go here, make them elegant */#drop-ins,
+#colorsystem,
+#headers,
+#article,
+#grid-system,
+#wells,
+#alerts,
+#badges,
+#callout,
+#forms,
+#disabled,
+#cards,
+#dialogs,
+#progress,
+#code,
+#quotes,
+#nav,
+#lists,
+#description_lists,
+#details,
+#helpers,
+#images {
+  scroll-margin-top: 200px;
+}
+
+.filler.colored {
+  background-color: var(--primary-lightest);
+  text-align: center;
+}

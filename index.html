@@ -5,7 +5,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Your Project Name</title>
+    <title>EleganCSS -- the Style engine that began with a bad pun</title>
     <meta name="description" content="A brief description of your page for search engines.">
     
     <link rel="stylesheet" href="eleganconfig.css">
@@ -17,8 +17,12 @@
 <body>
 
   <nav class="fixed">
-    <h1 class="logo">Elegan<mark><em>CSS</em></mark></h1>
+    <header>
+      <h1 class="logo">Elegan<mark><em>CSS</em></mark></h1>
+      <small>by <a href="https://sense-studios.com" target="_blank">Sense Studios</a> </small>
+    </header>
     <menu>
+      <li><a href="#drop-ins">Drop in</a></li>
       <li><a href="#colorsystem">colorsystem</a></li>
       <li><a href="#headers">headers</a></li>
       <li><a href="#article">article</a></li>
@@ -45,9 +49,73 @@
 
   <main>
 
-    <h2> 1. color system </h2>
-    <h3> informative colors </h3>
+    <h2 id="drop-ins"> 0. Configuration </h2>
+    <div class="grid g2-1">
+      <article>
+        <p>
+          <strong>EleganCSS is what you get when you make a bad pun while playing with oklch colors</strong> 
+          -- it is also a drop-in solution for your CSS needs that requires exactly one configuration. 
+          Simply throw in some colors and fonts you like. Stop fiddling around with <code>divs</code> and 
+          <code>spans</code>; just write markup and EleganCSS will do the rest.<br>
+          <br>
+          You start with a simple configuration; color and fonts. Then add Elegance, and if you really 
+          <b>need </b>to, you can maybe also write some extra little custom styles.
+          <br>
+          <code class="codeblock bash">
+  \.
+  \..
+  <a href="eleganconfig.css" target="_blank">eleganconfig.css </a>
+  <a href="elegan.css " target="_blank">elegan.css  </a> 🔥
+  <a href="eleganoverrides.css" target="_blank">eleganoverrides.css </a>
+          </code>
+          <br>
+          For more information visit
+          <a href="https://github.com/Sense-Studios/elegancss" target="_blank">Elegance on Github</a>
+        </p>
+        <dl class="horizontal">
+          <dt>Header font: </dt><dd><a href="https://fonts.google.com/specimen/Poppins" target="_blank">Poppins</a></dd>
+          <dt>Main font: </dt><dd><a href="https://fonts.google.com/specimen/Merriweather" target="_blank">Merriweather</a></dd>
+          <dt>Monospace font: </dt><dd><a href="https://fonts.google.com/specimen/Anonymous+Pro" target="_blank">Anonymous Pro</a></dd>
+          <hr>          
+          <dt>Primary color: </dt><dd> <div class="color-swatch primary"></div> Marine Blue </dd>
+          <dt>Secondary color: </dt><dd> <div class="color-swatch secondary"></div> Coral Sea </dd>
+          <dt>Accent color: </dt><dd><div class="color-swatch accent"></div> Pure Purper </dd>
+          <br>
+          <br>
+          <dt>Info: </dt><dd> <div class="color-swatch info"></div> Blue </dd>
+          <dt>Success: </dt><dd> <div class="color-swatch success"></div> Green </dd>
+          <dt>Warning: </dt><dd><div class="color-swatch warning"></div> Yellow </dd>
+          <dt>Danger: </dt><dd> <div class="color-swatch danger"></div> Red </dd>
+
+        </dl>    
+      </article>            
+      <figure class="polaroid">
+        <img src="images/i-receive-you-receive-meme-55ian8.jpg">
+      </figure>      
+    </div>
+    <div class="spacer"></div>
+    <h2 id="colorsystem"> 1. color system </h2>
+    <p>
+      Your colors are automagically recalculated for different scenarios like roll over events
+      You don't need to do nothing, and we're not using AI either, its just a well thought out solution 
+      with <code>color-mix</code>. Also, all colors are calculated in <a href="https://oklch.com/">OKlch</a>, which 
+      is a based color system that is based on the <em>perceived</em> color. Also it can do colors that other 
+      system can't even display. Which is even more awesome.
+    </p>
+    <h3> <span class="inverted">Your</span> colors </h3>
     <div class="grid g4">
+      <div class="card">
+        <h5 class="text-center">grey <span class='inverted'>default</span></h5>
+        <div style="background-color: black;">&nbsp;</div>
+        <div style="background-color:var(--grey-darkest);">&nbsp;</div>
+        <div style="background-color:var(--grey-darker);">&nbsp;</div>
+        <div style="background-color:var(--grey-dark);">&nbsp;</div>
+        <div style="background-color:var(--grey);">&nbsp;</div>
+        <div style="background-color:var(--grey-light);">&nbsp;</div>
+        <div style="background-color:var(--grey-lighter);">&nbsp;</div>
+        <div style="background-color:var(--grey-lightest);">&nbsp;</div>
+        <div style="background-color:white;">&nbsp;</div>
+      </div>
       <div class="card">
         <h5 class="primary text-center">Primary <span class="inverted">inverted</span></h5>
         <div style="background-color: black;">&nbsp;</div>
@@ -86,6 +154,11 @@
         <div style="background-color:var(--accent-lightest);">&nbsp;</div>
         <div style="background-color:white;">&nbsp;</div>
       </div>
+    </div>
+    <br>
+    <br>
+    <h3> <span class="inverted">Informative</span> colors </h3>
+    <div class="grid g4">      
       <div class="card">
         <h5 class="danger text-center">red <span class='inverted'>danger</span></h5>
         <div style="background-color: black;">&nbsp;</div>
@@ -134,28 +207,15 @@
         <div style="background-color:var(--warning-lightest);">&nbsp;</div>
         <div style="background-color:white;">&nbsp;</div>
       </div>
-      <div class="card">
-        <h5 class="text-center">grey <span class='inverted'>default</span></h5>
-        <div style="background-color: black;">&nbsp;</div>
-        <div style="background-color:var(--grey-darkest);">&nbsp;</div>
-        <div style="background-color:var(--grey-darker);">&nbsp;</div>
-        <div style="background-color:var(--grey-dark);">&nbsp;</div>
-        <div style="background-color:var(--grey);">&nbsp;</div>
-        <div style="background-color:var(--grey-light);">&nbsp;</div>
-        <div style="background-color:var(--grey-lighter);">&nbsp;</div>
-        <div style="background-color:var(--grey-lightest);">&nbsp;</div>
-        <div style="background-color:white;">&nbsp;</div>
-      </div>
     </div>
 
-      light 
-      dark 
+      <!-- light  dark  -->
 
     <br>
     <br>
 
-    <h3> support colors </h3>
-    <div class="grid g7">
+    <h3><span class="inverted">support</span> colors </h3>
+    <div class="grid g6">
       <div class="card">
         <h6 class="french-lilac text-center">Support 1</span></h6>
         <div style="background-color:var(--purple-darkest);">&nbsp;</div>
@@ -212,6 +272,18 @@
         <div style="background-color:white;">&nbsp;</div>
       </div>
       <div class="card">
+        <h6 class="coral-sea text-center">Support 6</span></h6>
+        <div style="background-color:var(--coral-sea-darkest);">&nbsp;</div>
+        <div style="background-color:var(--coral-sea-darker);">&nbsp;</div>
+        <div style="background-color:var(--coral-sea-dark);">&nbsp;</div>
+        <div style="background-color:var(--coral-sea);">&nbsp;</div>
+        <div style="background-color:var(--coral-sea-light);">&nbsp;</div>
+        <div style="background-color:var(--coral-sea-lighter);">&nbsp;</div>
+        <div style="background-color:var(--coral-sea-lightest);">&nbsp;</div>          
+        <div style="background-color:white;">&nbsp;</div>
+      </div>
+      <!-- 
+      <div class="card">
         <h6 class="coral-sea text-center">Derma green</span></h6>
         <div style="background-color:var(--derma-green-darkest);">&nbsp;</div>
         <div style="background-color:var(--derma-green-darker);">&nbsp;</div>
@@ -233,12 +305,16 @@
         <div style="background-color:var(--derma-pink-lightest);">&nbsp;</div>          
         <div style="background-color:white;">&nbsp;</div>
       </div>
+      -->
     </div>
 
     <br>
     <hr>
     <br>
-
+    
+    <h2 id="headers">2. Headers</h2>
+    <br 
+    <br>
     <h1> Header 1 </h1>
     <h2> Header 2 </h2>
     <h2 class="danger"> Header 2 </h2>
@@ -253,330 +329,414 @@
     <br>
     <hr>
     <br>
-
-    <article>
-      <h1>Ut delectus quasi est adipisci recusandae et corrupti praesentium. </h1>
-      <p>Lorem ipsum dolor sit amet. 33 explicabo rationeEst aspernatur cum eaque 
-        deleniti vel explicabo consequuntur. Et quaerat voluptatum et internos 
-        repudiandae33 repudiandae qui dolore blanditiis 33 totam ducimus. 
-        Ut galisum praesentiumEt <mark>doloremque et repellat explicabo</mark>ut repellendus 
-        voluptas et dolor omnis. Qui vero obcaecatiQui quaerat aut velit atque et 
-        aliquam autem aut adipisci quod. Et nisi nesciunt qui facilis magniId explicabo 
-        ab amet galisum ab ratione obcaecati ut aspernatur voluptate qui voluptatem maxime.
-        Est unde ducimusHic minima et delectus velit ea nesciunt quibusdam sit velit 
-        inventore in eveniet animi id dolores animi. Cum inventore velit ut 
-        molestias consectetur <a href="https://www.loremipzum.com" target="_blank">
-        Rem provident cum temporibus iusto et eligendi aliquam cum labore veniam</a>. 
-        Et excepturi sintqui sapiente ea ipsam dignissimos? Aut enim reprehenderit 
-        et veniam magnam <strong>Hic cupiditate</strong>. 
-        Et molestias corrupti est nihil nostrum <em>Ex molestiae rem odit suscipit 
-        ea iusto delectus in veniam quia</em>. Et delectus possimus sit voluptatum 
-        saepeQuo accusamus in dolores accusamus et obcaecati culpa sed minus 
-        quibusdam aut ullam quae. </p>
-    </article>
-
-    <section>
-      <blockquote cite="https://www.loremipzum.com">
-        Est dolore molestiae est culpa veniam ut autem dolores non temporibus 
-        incidunt in voluptatibus commodi. 
-      </blockquote>
-    </section>
-
+    <h2>3. Main text</h2>
+    <br 
     <br>
-    <hr>
-    <br>
-
     <article>
-      <h2>The need for EleganCSS. </h2>
-      <p>I love Bootstrap. I have been using bootstrap since it infancy, and 
-        I think I have dreamt in bootstrap on more then one occasion.
-        However, the world has moved on, since the days of <code>margin: auto</code> and <code>float: left</code>.
-        I don't think I have to tell anyone that With the introduction of Flexbox and Grid, CSS has changed.
-        There is no more need for a rigid 12-colomn grid anymore. We are not Sumerians, we can have 
-        seven columns if we really want. Or 13.<br>
-        We still have a need for styling though, and who can keep up with all the innovation the W3C
-        has been putting out there the last five years. There has been native functions added to CSS 
-        monthly and browsers have been picking them up with great speed. There are only few of us who
-        really want to read all the "five things you didn't know CSS could do" and "Are you still writing
-        CSS as if it was 2015". They are pedantic. Still, wouldn't it be nice to have a modern CSS file 
-        that you can drop in, and does almost anything that bootstrap does, without javascript.<br>
-        That is where ElegenCSS comes in. It is a drop-in css that takes care of almost all your CSS 
-        needs with a single configuration.<br> 
-        It takes what was good from bootstrap, but translates it to modern HTML standards and practices.
-        That means, that if you write your html well, your styling will follow. No need for nested divs
-        to set up that pesky horizontal form. Just add the correct class to the fieldset, section or 
-        form itself and it works. Straight out of the box and without hassle.<br>
-        It doesn't need to be backward compatible, because there is no backlog. You don't need to learn
-        color theorie, because with oklhc all your color needs are taken care of and we simply calculate
-        all derative colors you might require. 
+      <div class="grid g2-1">
+        <div>
+          <h3>The need for EleganCSS. </h3>
+
+          <h4>don't forget to add a <span class="inverted">catching quote</span></h4>
+
+          <p>I love Bootstrap. I have been using bootstrap since it infancy, and 
+            I think I have dreamt in bootstrap on more then one occasion.
+            However, the world has moved on, since the days of <code>margin: auto</code> and <code>float: left</code>.
+            I don't think I have to tell anyone that With the introduction of Flexbox and Grid, CSS has changed.
+            There is no more need for a rigid 12-colomn grid anymore. We are not Sumerians, we can have 
+            seven columns if we really want. Or 13.<br>
+            We still have a need for styling though, and who can keep up with all the innovation the W3C
+            has been putting <mark>out there the last five years</mark>. There has been native functions added to CSS 
+            monthly and browsers have been picking them up with great speed. There are only few of us who
+            really want to read all the "five things you didn't know CSS could do" and "Are you still writing
+            CSS as if it was 2015". They are pedantic. Still, wouldn't it be nice to have a modern CSS file 
+            that you can drop in, and does almost anything that bootstrap does, without javascript.<br>
+            That is where ElegenCSS comes in. It is a drop-in css that takes care of almost all your CSS 
+            needs with a single configuration.<br> 
+            It takes what was good from bootstrap, but translates it to modern HTML standards and practices.
+            That means, that if you write your html well, your styling will follow. No need for nested divs
+            to set up that pesky horizontal form. Just add the correct class to the fieldset, section or 
+            form itself and it works. Straight out of the box and without hassle.<br>
+            It doesn't need to be backward compatible, because there is no backlog. You don't need to learn
+            color theorie, because with oklhc all your color needs are taken care of and we simply calculate
+            all derative colors you might require. 
         </p>
+
+      </div>
+      <div>
+      <blockquote cite="https://www.loremipzum.com">
+        The dungeon master tried to dispute my Chaotic Character Sheet, but my alignment was justified.
+      </blockquote>
+
+      <br>
+      <br>
+
+      <h6>Features:</h6> 
+      <ul>
+        <li>dynamic oklab color</li>          
+        <li>no javascript</li>
+        <li>
+          <i class="test-icon"></i> no bloat (who needs 200 icons anyway?)
+          download the svg from https://icons.getbootstrap.com/
+        </li>
+        <li>modal</li>          
+        <li>mark</li>
+        <li>modern (we're not even thinking about ie anymore)</li>
+        <li>golden ration grid</li>
+        <li>bootstrap native</li>
+        <li>feature complete</li>
+        <li>no nonsense</li>
+        <li>humor</li>
+      </ul>
+      
+      <br>
+      <br>
+
+      <code class="codeblock css">
+        // Code <br>
+        &lt;!-- Ad dolorem sunt ut explicabo earum. --&gt;
+        &lt;obcaecati&gt;Qui magni omnis.&lt;/obcaecati&gt;
+        &lt;rem&gt;Ab quia sunt id quidem provident.&lt;/rem&gt;
+        &lt;dolorem&gt;Est modi saepe qui mollitia vero et minus modi.&lt;/dolorem&gt;
+      </code>
+
+      <br> 
+      <br>
+
+      <pre>
+        Preformatted text
+      </pre>
+    </div>
     </article>
-    <section>
-      <p>
-        Features: 
-        <ul>
-          <li>dynamic oklab color</li>          
-          <li>no javascript</li>
-          <li>
-            <i class="test-icon"></i> no bloat (who needs 200 icons anyway?)
-            download the svg from https://icons.getbootstrap.com/
-          </li>
-          <li>modal</li>          
-          <li>mark</li>
-          <li>modern (we're not even thinking about ie anymore)</li>
-          <li>golden ration grid</li>
-          <li>bootstrap native</li>
-          <li>feature complete</li>
-          <li>no nonsense</li>
-          <li>humor</li>
-        </ul>
-      </p>
-    </section>
 
-    <br>
-    <hr>
-    <br>
+
+    <br> 
+    <hr> 
+    <br> 
 
     <section>
-      <h1>Code</h1>
-      <pre><code>
-      &lt;!-- Ad dolorem sunt ut explicabo earum. --&gt;
-      &lt;obcaecati&gt;Qui magni omnis.&lt;/obcaecati&gt;
-      &lt;rem&gt;Ab quia sunt id quidem provident.&lt;/rem&gt;
-      &lt;dolorem&gt;Est modi saepe qui mollitia vero et minus modi.&lt;/dolorem&gt;
-      <br></code></pre>
-    
       <h1>Grid</h1>
-      <h3>Rem facere minus in vero mollitia qui necessitatibus commodi. </h3>
-      <p>Et rerum internosEt incidunt sit adipisci molestiae. 
-      Qui exercitationem aliquidCum eveniet ut quia ipsam? Id laboriosam 
-      laboriosam rem sunt fugaEt corrupti aut animi corrupti et adipisci 
-      nihil hic autem fugiat. Ut suscipit labore qui totam recusandaeSit natus 
-      aut quidem galisum ex nihil esse. Quo minus distinctio sed voluptatum aliquam 
-      <a href="https://www.loremipzum.com" target="_blank">Qui galisum et 
-      tempore dolores</a> eos quidem beatae ut sint voluptatibus quo autem 
-      laudantium. Hic exercitationem expedita vel iure fugiatQui fugiat ut odit neque 
-      et harum illum nam enim facilis! <mark class="blue"> In voluptatem nihilEum numquam cum numquam nobis </mark>. 
-      Aut soluta amet et minima debitisCum vero non quia pariatur in voluptas dolores? 
-      Ut iusto similique rem ducimus voluptasNon illo sed nihil possimus in tempora 
-      sapiente est rerum sint. Aut natus molestiae <em>Et sapiente cum esse debitis 
-      sed voluptatibus architecto</em> quo ipsam temporibus. In vero suntet quaerat 
-      et dolorum corrupti. Ut doloremque enimIn quasi sed quae consequatur est eaque 
-      impedit ut iure quia est accusamus voluptas qui aliquam illo! Ad velit ullamId 
-      blanditiis eos temporibus placeat ea dolorem omnis qui animi possimus. Et odio 
-      facere quo enim internosest rerum At vero eveniet. </p>
+      <p> the grids you know, with boring <code>1fr 1fr 1fr 1fr</code>, it's <code>1fr</code> all the way down.</p>
+
+      <code class="codeblock css">
+        // example for a simple 3-grid (g3)
+        &lt;div class=&quot;grid g3 colored&quot;&gt;
+          &lt;div class=&quot;filler colored&quot;&gt;g3&lt;/div&gt;
+          &lt;div class=&quot;filler colored&quot;&gt;g3&lt;/div&gt;
+          &lt;div class=&quot;filler colored&quot;&gt;g3&lt;/div&gt;
+        &lt;/div&gt;
+      </code>
+
+      <div class="grid g1 colored">
+        <div class="filler colored">g1</div>
+      </div>
+      <div class="grid g2 colored">
+        <div class="filler colored">g2</div>
+        <div class="filler colored">g2</div>
+      </div>
+      <div class="grid g3 colored">
+        <div class="filler colored">g3</div>
+        <div class="filler colored">g3</div>
+        <div class="filler colored">g3</div>
+      </div>
+      <div class="grid g4 colored">
+        <div class="filler colored">g4</div>
+        <div class="filler colored">g4</div>
+        <div class="filler colored">g4</div>
+        <div class="filler colored">g4</div>
+      </div>
+      <div class="grid g5 colored">
+        <div class="filler colored">g5</div>
+        <div class="filler colored">g5</div>
+        <div class="filler colored">g5</div>
+        <div class="filler colored">g5</div>
+        <div class="filler colored">g5</div>
+      </div>
+      <div class="grid g6 colored">
+        <div class="filler colored">g6</div>
+        <div class="filler colored">g6</div>
+        <div class="filler colored">g6</div>
+        <div class="filler colored">g6</div>
+        <div class="filler colored">g6</div>
+        <div class="filler colored">g6</div>
+      </div>
+      <div class="grid g7 colored">
+        <div class="filler colored">g7</div>
+        <div class="filler colored">g7</div>
+        <div class="filler colored">g7</div>
+        <div class="filler colored">g7</div>
+        <div class="filler colored">g7</div>
+        <div class="filler colored">g7</div>
+        <div class="filler colored">g7</div>
+      </div>
+      <div class="grid g8 colored">
+        <div class="filler colored">g8</div>
+        <div class="filler colored">g8</div>
+        <div class="filler colored">g8</div>
+        <div class="filler colored">g8</div>
+        <div class="filler colored">g8</div>
+        <div class="filler colored">g8</div>
+        <div class="filler colored">g8</div>
+        <div class="filler colored">g8</div>
+      </div>
+      <div class="grid g9 colored">
+        <div class="filler colored">g9</div>        
+        <div class="filler colored">g9</div>
+        <div class="filler colored">g9</div>
+        <div class="filler colored">g9</div>
+        <div class="filler colored"><small>best seat in the house</small></div>
+        <div class="filler colored">g9</div>
+        <div class="filler colored">g9</div>
+        <div class="filler colored">g9</div>
+        <div class="filler colored">g9</div>
+      </div>
+      <div class="grid g10 colored">
+        <div class="filler colored">g10</div>
+        <div class="filler colored">g10</div>
+        <div class="filler colored">g10</div>
+        <div class="filler colored">g10</div>
+        <div class="filler colored">g10</div>
+        <div class="filler colored">g10</div>
+        <div class="filler colored">g10</div>
+        <div class="filler colored">g10</div>
+        <div class="filler colored">g10</div>
+        <div class="filler colored">g10</div>
+      </div>
+      <div class="grid g11 colored">
+        <div class="filler colored">g11</div>
+        <div class="filler colored">g11</div>
+        <div class="filler colored">g11</div>
+        <div class="filler colored">g11</div>
+        <div class="filler colored">g11</div>
+        <div class="filler colored">g11</div>
+        <div class="filler colored">g11</div>
+        <div class="filler colored">g11</div>
+        <div class="filler colored">g11</div>
+        <div class="filler colored">g11</div>
+        <div class="filler colored">g11</div>        
+      </div>
+      <div class="grid g12 colored">
+        <div class="filler colored">g12</div>
+        <div class="filler colored">g12</div>
+        <div class="filler colored">g12</div>
+        <div class="filler colored">g12</div>
+        <div class="filler colored">g12</div>
+        <div class="filler colored">g12</div>
+        <div class="filler colored">g12</div>
+        <div class="filler colored">g12</div>
+        <div class="filler colored">g12</div>
+        <div class="filler colored">g12</div>
+        <div class="filler colored">g12</div>   
+        <div class="filler colored">g12</div>
+      </div>
+      <div class="grid g13">
+        <div class="filler colored">g13</div>
+        <div class="filler colored">g13</div>
+        <div class="filler colored">g13</div>
+        <div class="filler colored">g13</div>
+        <div class="filler colored">g13</div>
+        <div class="filler colored">g13</div>
+        <div class="filler colored">g13</div>
+        <div class="filler colored">g13</div>
+        <div class="filler colored">g13</div>
+        <div class="filler colored">g13</div>
+        <div class="filler colored">g13</div>
+        <div class="filler colored">g13</div>
+        <div class="filler colored">g13</div>
+      </div>
+      <div class="grid g14">
+        <div class="filler colored">g14</div>
+        <div class="filler colored">g14</div>
+        <div class="filler colored">g14</div>
+        <div class="filler colored">g14</div>
+        <div class="filler colored">g14</div>
+        <div class="filler colored">g14</div>
+        <div class="filler colored">g14</div>
+        <div class="filler colored">g14</div>
+        <div class="filler colored">g14</div>
+        <div class="filler colored">g14</div>
+        <div class="filler colored">g14</div>
+        <div class="filler colored">g14</div>
+        <div class="filler colored">g14</div>
+        <div class="filler colored">g14</div>        
+      </div>
+      <div class="grid g15">
+        <div class="filler colored">g15</div>
+        <div class="filler colored">g15</div>
+        <div class="filler colored">g15</div>
+        <div class="filler colored">g15</div>
+        <div class="filler colored">g15</div>
+        <div class="filler colored">g15</div>
+        <div class="filler colored">g15</div>
+        <div class="filler colored">g15</div>
+        <div class="filler colored">g15</div>
+        <div class="filler colored">g15</div>
+        <div class="filler colored">g15</div>
+        <div class="filler colored">g15</div>
+        <div class="filler colored">g15</div>
+        <div class="filler colored">g15</div>
+        <div class="filler colored">g15</div>
+      </div>
+
+      <br>
+      <hr>
+      <br>
+
+      <div class="grid g2-1">        
+        <p>
+          the grids you you want to know, with <mark>the <em>Golden</em> ratio</mark><br>
+          These grid adhere to the Golden ratio and have come out in multitudes of 1.618 to 1
+          or 61.8% and 38.2%        
+            
+          <code class="codeblock css">
+  &lt;div class=&quot;grid g1-2lored&quot;&gt;
+    &lt;div class=&quot;filler colored&quot;&gt;g1-2;/div&gt;
+    &lt;div class=&quot;filler colored&quot;&gt;g1-2;/div&gt;
+    &lt;div class=&quot;filler colored&quot;&gt;g1-2;/div&gt;
+  &lt;/div&gt;
+          </code>
+        
+          Example of a 1-2 grid (one column is 38.2% (1) and the other is 61.8% (2)
+
+          <code class="codeblock css">
+  &lt;div class=&quot;grid g2-2-1 colored&quot;&gt;
+    &lt;div class=&quot;filler colored&quot;&gt;g2-2-1&lt;/div&gt;
+    &lt;div class=&quot;filler colored&quot;&gt;g2-2-1&lt;/div&gt;
+    &lt;div class=&quot;filler colored&quot;&gt;g2-2-1&lt;/div&gt;
+  &lt;/div&gt;
+          </code>
+
+          Example of a 2-2-1 grid: two columns are 38.2% (2) and what remains is the other column, 2 (23.6%)          
+        </p>
+        
+        <figure class="polaroid">
+          <img src="images/3d3688ca952fd7f7fc9377e1b2ca6176.jpg">
+        </figure>
+
+      </div>
+      
+      <h5>Two columns</h5>
+      <div class="grid g1-2 colored">
+        <div class="filler colored">g1-2</div>
+        <div class="filler colored">g1-2</div>
+      </div>
+      <div class="grid g2-1 colored">
+        <div class="filler colored">g2-1</div>
+        <div class="filler colored">g2-1</div>
+      </div>
+      <div class="grid g1-3 colored">
+        <div class="filler colored">g1-3</div>
+        <div class="filler colored">g1-3</div>
+      </div>
+      <div class="grid g3-1 colored">
+        <div class="filler colored">g3-1</div>
+        <div class="filler colored">g3-1</div>
+      </div>
+      <div class="grid g1-4 colored">
+        <div class="filler colored">g1-4</div>
+        <div class="filler colored">g1-4</div>
+      </div>
+      <div class="grid g4-1 colored">
+        <div class="filler colored">g4-1</div>
+        <div class="filler colored">g4-1</div>
+      </div>
+      <h5>Three columns</h5>
+      <div class="grid g1-2-2 colored">
+        <div class="filler colored">g1-2-2</div>
+        <div class="filler colored">g1-2-2</div>
+        <div class="filler colored">g1-2-2</div>
+      </div>
+      <div class="grid g2-1-2 colored">
+        <div class="filler colored">g2-1-2</div>
+        <div class="filler colored">g2-1-2</div>
+        <div class="filler colored">g2-1-2</div>
+      </div>
+      <div class="grid g2-2-1 colored">
+        <div class="filler colored">g2-2-1</div>
+        <div class="filler colored">g2-2-1</div>
+        <div class="filler colored">g2-2-1</div>
+      </div>
+      <h5>Four columns</h5>
+      <div class="grid g2-1-1-1 colored">
+        <div class="filler colored">g2-1-1-1</div>
+        <div class="filler colored">g2-1-1-1</div>
+        <div class="filler colored">g2-1-1-1</div>
+        <div class="filler colored">g2-1-1-1</div>
+      </div>
+
+      <div class="grid g2-2-1-1 colored">
+        <div class="filler colored">g2-2-1-1</div>
+        <div class="filler colored">g2-2-1-1</div>
+        <div class="filler colored">g2-2-1-1</div>
+        <div class="filler colored">g2-2-1-1</div>        
+      </div>      
     </section>
 
-    <div class="grid g1-2">
-      <div>
-      <p>Lorem ipsum dolor sit amet. 33 explicabo rationeEst aspernatur cum eaque 
-        deleniti vel explicabo consequuntur. Et quaerat voluptatum et internos 
-        repudiandae33 repudiandae qui dolore blanditiis 33 totam ducimus. 
-        Ut galisum praesentiumEt <mark>doloremque et repellat explicabo</mark>ut repellendus 
-        voluptas et dolor omnis. Qui vero obcaecatiQui quaerat aut velit atque et 
-        aliquam autem aut adipisci quod. Et nisi nesciunt qui facilis magniId explicabo 
-        ab amet galisum ab ratione obcaecati ut aspernatur</p>
-      </div>
-      <div>      <p>Lorem ipsum dolor sit amet. 33 explicabo rationeEst aspernatur cum eaque 
-        deleniti vel explicabo consequuntur. Et quaerat voluptatum et internos 
-        repudiandae33 repudiandae qui dolore blanditiis 33 totam ducimus. 
-        Ut galisum praesentiumEt <mark>doloremque et repellat explicabo</mark>ut repellendus 
-        voluptas et dolor omnis. Qui vero obcaecatiQui quaerat aut velit atque et 
-        aliquam autem aut adipisci quod. Et nisi nesciunt qui facilis magniId explicabo 
-        ab amet galisum ab ratione obcaecati ut aspernatur voluptate qui voluptatem maxime.
-        Est unde ducimusHic minima et delectus velit ea nesciunt quibusdam sit velit 
-        inventore in eveniet animi id dolores animi. Cum inventore velit ut 
-        molestias consectetur <a href="https://www.loremipzum.com" target="_blank">
-        Rem provident cum temporibus iusto et eligendi aliquam cum labore veniam</a>. 
-        Et excepturi sintqui sapiente ea ipsam dignissimos? Aut enim reprehenderit 
-        et veniam magnam <strong>Hic cupiditate</strong>. 
-        Et molestias corrupti est nihil nostrum <em>Ex molestiae rem odit suscipit 
-        ea iusto delectus in veniam quia</em>. Et delectus possimus sit voluptatum 
-        saepeQuo accusamus in dolores accusamus et obcaecati culpa sed minus 
-        quibusdam aut ullam quae. </p>        
-      </div>
-    </div>
-    
-    <div class="grid g1-2-2">
-      <div>
-      <p>Lorem ipsum dolor sit amet. 33 explicabo rationeEst aspernatur cum eaque 
-        deleniti vel explicabo consequuntur. Et quaerat voluptatum et internos 
-        repudiandae33 repudiandae qui dolore blanditiis 33 totam ducimus. 
-        Ut galisum praesentiumEt <mark>doloremque et repellat explicabo</mark>ut repellendus 
-        voluptas et dolor omnis. Qui vero obcaecatiQui quaerat aut velit atque et 
-        aliquam autem aut adipisci quod. Et nisi nesciunt qui facilis magniId explicabo 
-        ab amet galisum ab ratione obcaecati ut aspernatur</p>
-      </div>
-      <div>      <p>Lorem ipsum dolor sit amet. 33 explicabo rationeEst aspernatur cum eaque 
-        deleniti vel explicabo consequuntur. Et quaerat voluptatum et internos 
-        repudiandae33 repudiandae qui dolore blanditiis 33 totam ducimus. 
-        Ut galisum praesentiumEt <mark>doloremque et repellat explicabo</mark>ut repellendus 
-        voluptas et dolor omnis. Qui vero obcaecatiQui quaerat aut velit atque et 
-        aliquam autem aut adipisci quod. Et nisi nesciunt qui facilis magniId explicabo 
-        ab amet galisum ab ratione obcaecati ut aspernatur voluptate qui voluptatem maxime.
-        Est unde ducimusHic minima et delectus velit ea nesciunt quibusdam sit velit 
-        inventore in eveniet animi id dolores animi. Cum inventore velit ut 
-        molestias consectetur <a href="https://www.loremipzum.com" target="_blank">
-        Rem provident cum temporibus iusto et eligendi aliquam cum labore veniam</a>. 
-        Et excepturi sintqui sapiente ea ipsam dignissimos? Aut enim reprehenderit 
-        et veniam magnam <strong>Hic cupiditate</strong>. 
-        Et molestias corrupti est nihil nostrum <em>Ex molestiae rem odit suscipit 
-        ea iusto delectus in veniam quia</em>. Et delectus possimus sit voluptatum 
-        saepeQuo accusamus in dolores accusamus et obcaecati culpa sed minus 
-        quibusdam aut ullam quae. </p>        
-      </div>
-      <div>      <p>Lorem ipsum dolor sit amet. 33 explicabo rationeEst aspernatur cum eaque 
-        deleniti vel explicabo consequuntur. Et quaerat voluptatum et internos 
-        repudiandae33 repudiandae qui dolore blanditiis 33 totam ducimus. 
-        Ut galisum praesentiumEt <mark>doloremque et repellat explicabo</mark>ut repellendus 
-        voluptas et dolor omnis. Qui vero obcaecatiQui quaerat aut velit atque et 
-        aliquam autem aut adipisci quod. Et nisi nesciunt qui facilis magniId explicabo 
-        ab amet galisum ab ratione obcaecati ut aspernatur voluptate qui voluptatem maxime.
-        Est unde ducimusHic minima et delectus velit ea nesciunt quibusdam sit velit 
-        inventore in eveniet animi id dolores animi. Cum inventore velit ut 
-        molestias consectetur <a href="https://www.loremipzum.com" target="_blank">
-        Rem provident cum temporibus iusto et eligendi aliquam cum labore veniam</a>. 
-        Et excepturi sintqui sapiente ea ipsam dignissimos? Aut enim reprehenderit 
-        et veniam magnam <strong>Hic cupiditate</strong>. 
-        Et molestias corrupti est nihil nostrum <em>Ex molestiae rem odit suscipit 
-        ea iusto delectus in veniam quia</em>. Et delectus possimus sit voluptatum 
-        saepeQuo accusamus in dolores accusamus et obcaecati culpa sed minus 
-        quibusdam aut ullam quae. </p>        
-      </div>
-    </div>
-    
-    <hr>
-    
-    <div class="grid g2">
-      <ul>
-        <li>Et commodi magni cum molestiae voluptas sit accusamus cumque. </li>
-        <li>Et corporis maiores aut nobis maiores quo eligendi vero. </li>
-        <li>Ut dolores iure ea deleniti quasi vel dolores nobis. </li>
-        <li>Qui distinctio expedita et iure commodi. </li>
-        <li>Ut eveniet quasi et commodi sunt nam cupiditate architecto et enim nihil. </li>
-      </ul>
-      <dl>
-        <dt><dfn>Sed molestiae laboriosam. </dfn></dt>
-        <dd>Aut eius cumque id dolore quia? </dd>
-        <dt><dfn>Ea voluptas praesentium. </dfn></dt>
-        <dd>Et exercitationem voluptas ut incidunt voluptatem ut veniam doloribus. </dd>
-        <dt><dfn>Ut sint error in magnam eius. </dfn></dt>
-        <dd>Quo provident rerum eum quidem obcaecati. </dd>
-      </dl>
-    </div>
-    
-    <hr>
-
-    <div class="grid g3">
-      <ol>
-        <li>Non reprehenderit placeat ab doloribus ipsa. </li>
-        <li>Aut laborum rerum 
-        eum soluta repellat non dignissimos velit et placeat vero. </li>
-      </ol>
-      <ul>
-        <li>Et commodi magni cum molestiae voluptas sit accusamus cumque. </li>
-        <li>Et corporis maiores aut nobis maiores quo eligendi vero. </li>
-        <li>Ut dolores iure ea deleniti quasi vel dolores nobis. </li>
-        <li>Qui distinctio expedita et iure commodi. </li>
-        <li>Ut eveniet quasi et commodi sunt nam cupiditate architecto et enim nihil. </li>
-      </ul>
-      <dl>
-        <dt><dfn>Sed molestiae laboriosam. </dfn></dt>
-        <dd>Aut eius cumque id dolore quia? </dd>
-        <dt><dfn>Ea voluptas praesentium. </dfn></dt>
-        <dd>Et exercitationem voluptas ut incidunt voluptatem ut veniam doloribus. </dd>
-        <dt><dfn>Ut sint error in magnam eius. </dfn></dt>
-        <dd>Quo provident rerum eum quidem obcaecati. </dd>
-      </dl>
-    </div>
-  
   <br>
   <hr>
   <br>
   <h1>Wells</h1>
+  <p>With quotes from Orson Welles.</p>  
+
+  <code class="codeblock css">
+  &lt;div class=&quot;well success&quot;&gt;
+    &lt;p&gt;&ldquo;If there hadn't been women we'd still be squatting in a cave eating raw meat, 
+    because we made civilization in order to impress our girlfriends.&rdquo; &lt;/p&gt;
+  &lt;/div&gt;
+  </code>
+
+  <h5>Default</h5>
   <div class="well">
-    <p>laudantium. Hic exercitationem expedita vel iure fugiatQui fugiat ut odit neque 
-    et harum illum nam enim facilis! In voluptatem nihilEum numquam cum numquam nobis. 
-    Aut soluta amet et minima debitisCum vero non quia pariatur in voluptas dolores? 
-    Ut iusto similique rem ducimus voluptasNon illo sed nihil possimus in tempora 
-    sapiente est rerum sint. Aut natus molestiae <em>Et sapiente cum esse debitis 
-    sed voluptatibus architecto</em> quo ipsam temporibus. In vero suntet quaerat 
-    et dolorum corrupti. Ut doloremque enimIn quasi sed quae consequatur est eaque 
-    impedit ut iure quia est accusamus voluptas qui aliquam illo! Ad velit ullamId 
-    blanditiis eos temporibus placeat ea dolorem omnis qui animi possimus. Et odio 
-    facere quo enim internosest rerum At vero eveniet. </p>
+    <p>“Ask not what you can do for your country. Ask what’s for lunch.”</p>
   </div>
 
+  <h5 class="danger">Danger</h5>
   <div class="well danger">
-    <p>laudantium. Hic exercitationem expedita vel iure fugiatQui fugiat ut odit neque 
-    et harum illum nam enim facilis! In voluptatem nihilEum numquam cum numquam nobis. 
-    Aut soluta amet et minima debitisCum vero non quia pariatur in voluptas dolores? 
-    Ut iusto similique rem ducimus voluptasNon illo sed nihil possimus in tempora 
-    sapiente est rerum sint. Aut natus molestiae <em>Et sapiente cum esse debitis 
-    sed voluptatibus architecto</em> quo ipsam temporibus. In vero suntet quaerat 
-    et dolorum corrupti. Ut doloremque enimIn quasi sed quae consequatur est eaque 
-    impedit ut iure quia est accusamus voluptas qui aliquam illo! Ad velit ullamId 
-    blanditiis eos temporibus placeat ea dolorem omnis qui animi possimus. Et odio 
-    facere quo enim internosest rerum At vero eveniet. </p>
+    <p>“My doctor told me to stop having intimate dinners for four. Unless there are three other people.” </p>
   </div>
 
+  <h5 class="warning">Warning</h5>
   <div class="well warning">
-    <p>laudantium. Hic exercitationem expedita vel iure fugiatQui fugiat ut odit neque 
-    et harum illum nam enim facilis! In voluptatem nihilEum numquam cum numquam nobis. 
-    Aut soluta amet et minima debitisCum vero non quia pariatur in voluptas dolores? 
-    Ut iusto similique rem ducimus voluptasNon illo sed nihil possimus in tempora 
-    sapiente est rerum sint. Aut natus molestiae <em>Et sapiente cum esse debitis 
-    sed voluptatibus architecto</em> quo ipsam temporibus. In vero suntet quaerat 
-    et dolorum corrupti. Ut doloremque enimIn quasi sed quae consequatur est eaque 
-    impedit ut iure quia est accusamus voluptas qui aliquam illo! Ad velit ullamId 
-    blanditiis eos temporibus placeat ea dolorem omnis qui animi possimus. Et odio 
-    facere quo enim internosest rerum At vero eveniet. </p>
+    <p>“We're born alone, we live alone, we die alone. Only through our love and friendship can we create the illusion for the moment that we're not alone.” </p>
   </div>
 
+  <h5 class="success">Success</h5>
   <div class="well success">
-    <p>laudantium. Hic exercitationem expedita vel iure fugiatQui fugiat ut odit neque 
-    et harum illum nam enim facilis! In voluptatem nihilEum numquam cum numquam nobis. 
-    Aut soluta amet et minima debitisCum vero non quia pariatur in voluptas dolores? 
-    Ut iusto similique rem ducimus voluptasNon illo sed nihil possimus in tempora 
-    sapiente est rerum sint. Aut natus molestiae <em>Et sapiente cum esse debitis 
-    sed voluptatibus architecto</em> quo ipsam temporibus. In vero suntet quaerat 
-    et dolorum corrupti. Ut doloremque enimIn quasi sed quae consequatur est eaque 
-    impedit ut iure quia est accusamus voluptas qui aliquam illo! Ad velit ullamId 
-    blanditiis eos temporibus placeat ea dolorem omnis qui animi possimus. Et odio 
-    facere quo enim internosest rerum At vero eveniet. </p>
+    <p>“If there hadn't been women we'd still be squatting in a cave eating raw meat, because we made civilization in order to impress our girlfriends.” </p>
   </div>
 
+  <h5 class="info">Info</h5>
   <div class="well info">
-    <p>laudantium. Hic exercitationem expedita vel iure fugiatQui fugiat ut odit neque 
-    et harum illum nam enim facilis! In voluptatem nihilEum numquam cum numquam nobis. 
-    Aut soluta amet et minima debitisCum vero non quia pariatur in voluptas dolores? 
-    Ut iusto similique rem ducimus voluptasNon illo sed nihil possimus in tempora 
-    sapiente est rerum sint. Aut natus molestiae <em>Et sapiente cum esse debitis 
-    sed voluptatibus architecto</em> quo ipsam temporibus. In vero suntet quaerat 
-    et dolorum corrupti. Ut doloremque enimIn quasi sed quae consequatur est eaque 
-    impedit ut iure quia est accusamus voluptas qui aliquam illo! Ad velit ullamId 
-    blanditiis eos temporibus placeat ea dolorem omnis qui animi possimus. Et odio 
-    facere quo enim internosest rerum At vero eveniet. </p>
+    <p>“Our works in stone, in paint, in print, are spared, some of them, for a few decades or a millennium or two, but everything must finally fall in war, or wear away into the ultimate and universal ash - the triumphs, the frauds, the treasures and the fakes. A fact of life: we're going to die. "Be of good heart," cry the dead artists out of the living past. "Our songs will all be silenced, but what of it? Go on singing." Maybe a man's name doesn't matter all that much.”</p>
   </div>
 
   <br>
   <hr>
   <br>
    
-  <div>
-    <h1> Alerts </h1>
-    <div class="alert"> This tekst is of info and should be heeded </div>
-    <div class="alert alert-danger"> Oh No! </div>
-    <div class="alert alert-warning"> The first step in avoiding a trap, is knowing of its existence! </div>
-    <div class="alert alert-success"> Great success! </div>
-    <div class="alert alert-info"> Here is some extra info that might be of use. </div>
-  </div>
+  <h1> Alerts </h1>
+  <div class="alert"> This tekst is of info and should be heeded </div>
+  <div class="alert alert-danger"> Oh No! </div>
+  <div class="alert alert-warning"> The first step in avoiding a trap, is knowing of its existence! </div>
+  <div class="alert alert-success"> Great success! </div>
+  <div class="alert alert-info"> Here is some extra info that might be of use. </div>
     
   <br>
   <hr>
   <br>
    
+  <h1> Badges </h1>
 
+  <br>
+  <hr>
+  <br>
+   
+  <h1> Callouts </h1>
+  
+  <br>
+  <hr>
+  <br>
+   
   <h1> Forms </h1>
   <fieldset>
     <legend>Personalia:</legend>
@@ -619,14 +779,75 @@
   <textarea> this be my tekst area </textarea>
   <br>
 
+  <input datalist="my_datalist" placeholder="with datalist">
+  <datalist>
+    <option>This</option>
+    <option>Be</option>
+    <option>My</option>
+    <option>Datalist</option>
+  </datalist>
+
+  <h1> Disabled </h1>
+  
+  <br>
+  <hr>
+  <br>
+
+  <h1> Cards </h1>
+  <div class="grid g3">
+    <div class="card">
+      <h4 class="text-center">The ace of spades</h4>
+      <p class="text-center">From 1712 onwards, one of the cards in the pack, usually the ace of spades, was marked with a hand stamp</p>
+    </div>
+    <div class="card">
+      <h4 class="text-center">The Queen of Hearts</h4>
+      <p class="text-center">Queens may have been an invention of early German cardmakers. One of the earliest surviving packs of playing cards</p>
+    </div>
+    <div class="card">
+      <h4 class="text-center">The Jack of Clubs</h4>
+      <p class="text-center">The term became more entrenched in card play when, in 1864,[2] American cardmaker Samuel Hart published a deck using "J" instead of "Kn" to designate the lowest-ranking court card</p>
+    </div>
+
+  </div>
+  <br>
+  <hr>
+  <br>
+
+  <h1> Tables </h1>
+
+  <table>
+    <caption>Alien football stars</caption>
+    <thead>
+      <tr><th> first name </th><th> last name </th><th> address </th><th> vocation </th></tr>
+    </thead>
+    <tbody>
+      <tr><th> Clark </th><th> Kent </th><th> Metropolis </th><th> Alien </th></tr>
+      <tr><th> Bruce </th><th> Wayne </th><th> Gotham </th><th> Billionaire </th></tr>
+      <tr><th> Peter </th><th> Parker </th><th> New York </th><th> Photographer </th></tr>
+    </tbody>
+    <tfoot>
+      <tr><th> total: 4 </th><th> total: 4</th><th> total: 4 </th><th> total: 4 </th></tr>
+    </tfoot>
+  </table>
+
+  <br>
+  <hr>
+  <br>
+
   <h1> Details </h1> 
   <details>
     <summary>Epcot Center</summary>
     <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
   </details>
   
+  <h1> Lists </h1>
+    
+  <br>
+  <hr>
+  <br>
+
   <h1>Description lists</h1>
-  <dl>
+  <dl class="horizontal">
     <dt>Coffee</dt>
     <dd>Black hot drink</dd>
     <dt>Milk</dt>
