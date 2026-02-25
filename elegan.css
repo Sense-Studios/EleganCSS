@@ -383,8 +383,8 @@ mark {
     z-index: -1;
     background-color: var(--accent-lighter); 
     /* fallback? */
-    -webkit-mask-image: url(https://labs.sense-studios.com/eleganccs/svg/pen-brushes.svg);
-    mask-image: url(https://labs.sense-studios.com/eleganccs/svg/pen-brushes.svg);
+    -webkit-mask-image: url('svg/pen-brushes.svg');
+    mask-image: url('svg/pen-brushes.svg');
   }
 
   &.warning:after { background-color: var(--warning-lighter); }
@@ -395,7 +395,7 @@ mark {
 }
 
 .test-icon {
-  background: url(https://labs.sense-studios.com/eleganccs/svg/person-fill.svg);
+  background: url('svg/person-fill.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
