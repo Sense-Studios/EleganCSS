@@ -23,6 +23,18 @@
   --default-margin: 12px 21px;
   --wide-margin: 24px 42px;
 
+    /* spacing */
+  /*
+  --grid-gap: 42px;
+  --narrow-padding: 1px 3px;
+  --default-padding: 3px 6px;
+  --wide-padding: 9px 18px;
+  --narrow-margin: 6px 12px;
+  --default-margin: 12px 21px;
+  --wide-margin: 24px 42px;
+  --line-height: 1.6;
+  --letter-spacing: 0.6px;
+  */
   /* Colors */
   /*
   /* todo -- light dark
@@ -34,12 +46,17 @@
   */
 
   /* main */
-  --bg-color: oklch(0.9524 0.0045 214.33);
-  --primary: oklch(0.6 0.18 239);
-  --secondary: oklch(0.59 0.14 192);  
-  --accent: oklch(0.64 0.28 308);
+  --off-black: oklch(23.298% 0.00308 16.905);
+  --off-white: oklab(98.894% 0.0051 0.00147);
+  
   --light: oklch(0.9758 0.0054 95.1);
   --dark: oklch(0.3518 0.0054 95.1);
+
+  --grey: oklch(61% 0.00006 272);
+
+  --primary: oklch(0.6 0.18 239);      /* blue fusion */
+  --secondary: oklch(0.59 0.14 192);   /* coral seae  */
+  --accent: oklch(0.64 0.28 308);
 
   /* signaling */
   --danger: oklch(62.991% 0.25 25);
@@ -47,11 +64,6 @@
   --success: oklch(0.6285 0.2222 145);
   --info: oklch(0.6202 0.1942 252);
   
-  /* text */
-  --text-color: oklch(0.3518 0.0054 95.1);
-  --text-muted: oklch(0.7518 0.0054 95.1);
-  --border-color: oklch(0.7518 0.0054 95.1);
-
   /* support */
   --support-1: oklch(0.9 0 0); /* cloud dancer - pantone color of the year */
   --support-2: oklch(0.73 0.25 350); /* pink */

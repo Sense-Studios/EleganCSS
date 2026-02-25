@@ -25,4 +25,4 @@ It’s a drop-in solution for your CSS needs that requires exactly one configura
 **ElegenCSS** doesn't care about backward compatibility because it has no embarrassing backlog to defend. And don't worry about learning color theory; thanks to `oklch`, we just math out every derivative color you’ll ever need so you don't have to.
 
 **Demo**
-https://labs.sense-studios.com/eleganccs/
+https://sense-studios.github.io/EleganCSS/

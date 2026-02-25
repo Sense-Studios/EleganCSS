@@ -14,27 +14,12 @@
     color: light-dark(var(--light-color), var(--dark-color));
   }
   */
-
-  --off-black: oklch(0.1529 0 242);
-  --off-white: oklch(0.9524 0.0045 214.33);
-  
-  --grey-darkest: oklch(0.2429 0 0);
-  --grey-darker: oklch(0.32 0 0);
-  --grey-dark: oklch(0.48 0 0);
-  --grey:  oklch(0.6268 0 0);
-  --grey-light: oklch(0.76 0 0);
-  --grey-lighter: oklch(0.88 0 0);  
-  --grey-lightest: oklch(96% 0 0);
-
-  /*
-  --red-darkest: oklch(0.135 0.0544 25);
-  --red-darker: oklch(24% 0.10 25);
-  --red-dark: oklch(42% 0.21 25);
-  --red: oklch(62.991% 0.25 25);
-  --red-light: oklch(72% 0.25 25);
-  --red-lighter: oklch(84% 0.13 25);
-  --red-lightest: oklch(96% 0.01 25);
-  */
+  --grey-light: color-mix(in oklab, var(--grey) 75%, white);
+  --grey-lighter: color-mix(in oklab, var(--grey) 50%, white);
+  --grey-lightest: color-mix(in oklab, var(--grey) 25%, white);
+  --grey-darkest: color-mix(in oklab, var(--grey) 25%, black);
+  --grey-darker: color-mix(in oklab, var(--grey) 50%, black);
+  --grey-dark: color-mix(in oklab, var(--grey) 75%, black);  
 
   --primary-light: color-mix(in oklab, var(--primary) 75%, white);
   --primary-lighter: color-mix(in oklab, var(--primary) 50%, white);
@@ -85,123 +70,52 @@
   --success-darker: color-mix(in oklab, var(--success) 50%, black);
   --success-dark: color-mix(in oklab, var(--success) 75%, black);
 
+  --support-1-light: color-mix(in oklab, var(--support-1) 75%, white);
+  --support-1-lighter: color-mix(in oklab, var(--support-1) 50%, white);
+  --support-1-lightest: color-mix(in oklab, var(--support-1) 25%, white);
+  --support-1-darkest: color-mix(in oklab, var(--support-1) 25%, black);
+  --support-1-darker: color-mix(in oklab, var(--support-1) 50%, black);
+  --support-1-dark: color-mix(in oklab, var(--support-1) 75%, black);
 
+  --support-2-light: color-mix(in oklab, var(--support-2) 75%, white);
+  --support-2-lighter: color-mix(in oklab, var(--support-2) 50%, white);
+  --support-2-lightest: color-mix(in oklab, var(--support-2) 25%, white);
+  --support-2-darkest: color-mix(in oklab, var(--support-2) 25%, black);
+  --support-2-darker: color-mix(in oklab, var(--support-2) 50%, black);
+  --support-2-dark: color-mix(in oklab, var(--support-2) 75%, black);
 
-  /* depricated */
-  --blue-darkest: oklch(0.135 0.1105 252);
-  --blue-darker: oklch(0.24 0.1942 252);
-  --blue-dark: oklch(0.42 0.1942 252);
-  --blue: oklch(0.6202 0.1942 252);
-  --blue-light: oklch(0.72 0.1631 252);
-  --blue-lighter: oklch(0.84 0.0981 252);
-  --blue-lightest: oklch(0.96 0.0096 252);
+  --support-3-light: color-mix(in oklab, var(--support-3) 75%, white);
+  --support-3-lighter: color-mix(in oklab, var(--support-3) 50%, white);
+  --support-3-lightest: color-mix(in oklab, var(--support-3) 25%, white);
+  --support-3-darkest: color-mix(in oklab, var(--support-3) 25%, black);
+  --support-3-darker: color-mix(in oklab, var(--support-3) 50%, black);
+  --support-3-dark: color-mix(in oklab, var(--support-3) 75%, black);
 
-  --green-darkest: oklch(0.1285 0.04 145);
-  --green-darker: oklch(0.2485 0.105 145);
-  --green-dark: oklch(0.4285 0.2073 145);
-  --green: oklch(0.6285 0.2222 145);
-  --green-light: oklch(0.7285 0.2222 145);
-  --green-lighter: oklch(0.8485 0.2222 145);
-  --green-lightest: oklch(0.9685 0.0207 145);
+  --support-4-light: color-mix(in oklab, var(--support-4) 75%, white);
+  --support-4-lighter: color-mix(in oklab, var(--support-4) 50%, white);
+  --support-4-lightest: color-mix(in oklab, var(--support-4) 25%, white);
+  --support-4-darkest: color-mix(in oklab, var(--support-4) 25%, black);
+  --support-4-darker: color-mix(in oklab, var(--support-4) 50%, black);
+  --support-4-dark: color-mix(in oklab, var(--support-4) 75%, black);
 
-  /*
-  --yellow-darkest: oklch(0.2462 0.0414 92.12);
-  --yellow-darker: oklch(0.4856 0.211 92.12);
-  --yellow-dark: oklch(0.6656 0.211 92.12);
-  --yellow: oklch(0.8397 0.211 92.12);
-  --yellow-light: oklch(0.9276 0.211 92.12); 
-  --yellow-lighter: oklch(0.9835 0.191 92.12); 
-  --yellow-lightest: oklch(0.9947 0.04 92.12);
-  */
+  --support-5-light: color-mix(in oklab, var(--support-5) 75%, white);
+  --support-5-lighter: color-mix(in oklab, var(--support-5) 50%, white);
+  --support-5-lightest: color-mix(in oklab, var(--support-5) 25%, white);
+  --support-5-darkest: color-mix(in oklab, var(--support-5) 25%, black);
+  --support-5-darker: color-mix(in oklab, var(--support-5) 50%, black);
+  --support-5-dark: color-mix(in oklab, var(--support-5) 75%, black);
+
+  --support-6-light: color-mix(in oklab, var(--support-6) 75%, white);
+  --support-6-lighter: color-mix(in oklab, var(--support-6) 50%, white);
+  --support-6-lightest: color-mix(in oklab, var(--support-6) 25%, white);
+  --support-6-darkest: color-mix(in oklab, var(--support-6) 25%, black);
+  --support-6-darker: color-mix(in oklab, var(--support-6) 50%, black);
+  --support-6-dark: color-mix(in oklab, var(--support-6) 75%, black);
   
-  --yellow-light: color-mix(in oklab, var(--yellow) 75%, white);
-  --yellow-lighter: color-mix(in oklab, var(--yellow) 50%, white);
-  --yellow-lightest: color-mix(in oklab, var(--yellow) 25%, white);
-  --yellow-darkest: color-mix(in oklab, var(--yellow) 25%, black);
-  --yellow-darker: color-mix(in oklab, var(--yellow) 50%, black);
-  --yellow-dark: color-mix(in oklab, var(--yellow) 75%, black);
-
-  --purple-lightest: oklch(0.97 0.02 308);
-  --purple-lighter: oklch(0.8 0.14 308);
-  --purple-light: oklch(0.73 0.2 308);
-  --purple: oklch(0.64 0.28 308);
-  --purple-dark: oklch(0.55 0.29 308);
-  --purple-darker: oklch(0.42 0.23 308);
-  --purple-darkest: oklch(0.3 0.16 308);
-
-  --pink-darkest: oklch(0.3 0.14 350);
-  --pink-darker: oklch(0.42 0.19 350);  
-  --pink-dark: oklch(0.58 0.26 347.82);
-  --pink: oklch(0.73 0.25 350);
-  --pink-light: oklch(0.81 0.17 350);  
-  --pink-lighter: oklch(0.92 0.06 350);
-  --pink-lightest: oklch(0.97 0.02 350);
-  
-  --blue-fusion-lightest: oklch(0.96 0.02 239);
-  --blue-fusion-lighter: oklch(0.78 0.13 239);
-  --blue-fusion-light: oklch(0.7 0.19 239);
-  --blue-fusion: oklch(0.6 0.18 239);
-  --blue-fusion-dark: oklch(0.51 0.15 239);
-  --blue-fusion-darker: oklch(0.4 0.12 239);
-  --blue-fusion-darkest: oklch(0.29 0.09 239);
-
-
-  --coral-sea-lightest: oklch(0.96 0.08 192);
-  --coral-sea-lighter: oklch(0.83 0.13 192.91);   
-  --coral-sea-light: oklch(0.68 0.16 192);
-  --coral-sea: oklch(0.59 0.14 192);  
-  --coral-sea-dark: oklch(0.4 0.09 192);
-  --coral-sea-darker: oklch(0.29 0.07 192);
-  --coral-sea-darkest: oklch(27.68% 0.01782 190.387);  
-  
-  /*
-  --cloud-dancer-darkest: oklch(0.3518 0.0054 95.1);
-  --cloud-dancer-darker: oklch(0.5518 0.0054 95.1);
-  --cloud-dancer-dark: oklch(0.7518 0.0054 95.1);
-  --cloud-dancer: oklch(0.9 0 0);
-  --cloud-dancer-light: oklch(0.94 0 0);
-  --cloud-dancer-lighter: oklch(0.9758 0.0054 95.1);
-  --cloud-dancer-lightest: oklch(0.9918 0.0054 95.1);
-  */
-  --cloud-dancer: oklch(0.9 0 0); 
-  --cloud-dancer-light: color-mix(in oklab, var(--cloud-dancer) 75%, white);
-  --cloud-dancer-lighter: color-mix(in oklab, var(--cloud-dancer) 50%, white);
-  --cloud-dancer-lightest: color-mix(in oklab, var(--cloud-dancer) 25%, white);
-  --cloud-dancer-darkest: color-mix(in oklab, var(--cloud-dancer) 25%, black);
-  --cloud-dancer-darker: color-mix(in oklab, var(--cloud-dancer) 50%, black);
-  --cloud-dancer-dark: color-mix(in oklab, var(--cloud-dancer) 75%, black);
-
-  /* ---exampleds--- */
-  --derma-green-light: color-mix(in oklab, var(--derma-green) 75%, white);
-  --derma-green-lighter: color-mix(in oklab, var(--derma-green) 50%, white);
-  --derma-green-lightest: color-mix(in oklab, var(--derma-green) 25%, white);
-  --derma-green-darkest: color-mix(in oklab, var(--derma-green) 25%, black);
-  --derma-green-darker: color-mix(in oklab, var(--derma-green) 50%, black);
-  --derma-green-dark: color-mix(in oklab, var(--derma-green) 75%, black);
-
-  --derma-pink-light: color-mix(in oklab, var(--derma-pink) 75%, white);
-  --derma-pink-lighter: color-mix(in oklab, var(--derma-pink) 50%, white);
-  --derma-pink-lightest: color-mix(in oklab, var(--derma-pink) 25%, white);
-  --derma-pink-darkest: color-mix(in oklab, var(--derma-pink) 25%, black);
-  --derma-pink-darker: color-mix(in oklab, var(--derma-pink) 50%, black);
-  --derma-pink-dark: color-mix(in oklab, var(--derma-pink) 75%, black);
-
-  /* violet */
-  /* pink */
-  
-  --line-height: 1.6;
-  --letter-spacing: 0.6px;
-
-  /* spacing */
-  /*
-  --grid-gap: 42px;
-  --narrow-padding: 1px 3px;
-  --default-padding: 3px 6px;
-  --wide-padding: 9px 18px;
-  --narrow-margin: 6px 12px;
-  --default-margin: 12px 21px;
-  --wide-margin: 24px 42px;
-  */
+  --bg-color: var(--light);
+  --border-color: var(--grey-dark);
+  --text-color: var(--grey-dark);
+  --text-muted: var(--grey-light);  
 }
 
 /* 2. Modern Reset */
@@ -221,9 +135,13 @@ body {
   letter-spacing: var(--letter-spacing);
   color: var(--text-color);
   background-color: var(--bg-color);
-  -webkit-font-smoothing: antialiased; /* Makes fonts look sharper on Mac */
+  -webkit-font-smoothing: antialiased;
   min-height: 100vh;
   text-wrap: pretty;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
 ::selection {
@@ -236,6 +154,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-header);
   letter-spacing: 0;
   text-wrap: pretty;
+  color: var(--text-color);
 
   &.inverted, .inverted {    
     color: var(--off-white);
@@ -540,7 +459,7 @@ mark {
   font-weight: bolder;
   
   border-color: var(--grey);
-  background-color: var(--grey-lighter);
+  background-color: var(--grey-lightest);
   color: var(--grey-dark);
 
   &.danger {
@@ -613,7 +532,7 @@ button {
 
   /* box-shadow: inset 0px -1px 0px #55555542, inset 0px 1px 1px #eeeeaa88; */
   text-shadow: 0px 1px 1px #55555542;
-  background-color: var(--grey-lighter);  
+  background-color: var(--grey-lightest);  
   /* border-style: outset solid outset solid; */
   /* border-width: 1px; */
   border-style: solid;
@@ -776,8 +695,8 @@ kbd, code, pre, time, samp {
         to bottom,
         color-mix(in oklab, var(--grey-lighter) 71%, white),
         color-mix(in oklab, var(--grey-lighter) 71%, white), 50%, 
-        var(--grey-lighter), 50%,
-        var(--grey-lighter)
+        var(--grey-lightest), 50%,
+        var(--grey-lightest)
       );
     background-size: 100% 50px;
     background-position: 0px 0px;
@@ -802,7 +721,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 12px 42px;
-  border-bottom: solid 2px var(--cloud-dancer);
+  border-bottom: solid 2px var(--support-1);
   margin-bottom: 18px;
 
   &.fixed, &.sticky {
@@ -843,11 +762,13 @@ dl {
       width: fit-content;
       font-weight: 700;
       min-width: 25%;
+      text-align: right;      
     }
 
     dd {    
       width: max-content;
       min-width: 75%;
+      padding-left: 18px;
     }
 
     hr {
@@ -880,6 +801,41 @@ details {
 .form-control {}
 .input-addition {}
 
+table {
+  width: 90%;
+  caption{
+    background-color: var(--support-1-light);
+    font-family: var(--font-header);
+    font-size: 12px;
+    padding: 3px 0px;
+  }
+  thead {
+    tr {
+      background-color: var(--grey-light);
+      color: white;
+    }
+  }
+
+  tbody {
+    tr:nth-child(odd) {
+      background-color: var(--support-1);
+    }
+    tr:nth-child(even) {
+      background-color: var(--support-1-lighter);
+    }
+    td {
+      padding: 0px 6px;
+    }
+  }
+
+  tfoot {    
+    tr {
+      background-color: var(--grey);
+      color: white;    
+    }
+  }
+}
+
 .badge {}
 .callout {}
 .list {}
@@ -900,11 +856,11 @@ img {
     padding-top: 6px;
   }
   background-color: white;
-  border: solid 1px var(--cloud-dancer-dark);
+  border: solid 1px var(--support-1-dark);
   border-radius: 9px;
   padding: 0 9px;
   overflow: hidden;
-  filter: drop-shadow(0.5px 3px 0px var(--cloud-dancer-dark));
+  filter: drop-shadow(0.5px 3px 0px var(--support-1-dark));
 }
 
 .text-center { text-align: center; }
@@ -935,7 +891,7 @@ img {
 figure {
   height: 100%;
   width: 100%;
-  background: linear-gradient( 180deg, var(--cloud-dancer) 61.8%, transparent 81% );
+  background: linear-gradient( 180deg, var(--support-1) 61.8%, transparent 81% );
   display: flex;
   flex-direction: row;
   align-items: flex-start;
