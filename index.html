@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>EleganCSS -- the Style engine that began with a bad pun</title>
-    <meta name="description" content="A brief description of your page for search engines.">
+    <meta name="description" content="EleganCSS is what you get when you make a bad pun while playing with oklch colors -- it is also a drop-in solution for your CSS needs that requires exactly one configuration. Simply throw in some colors and fonts you like. Stop fiddling around with divs and spans; just write markup and EleganCSS will do the rest.">
     
     <link rel="stylesheet" href="eleganconfig.css">
     <link rel="stylesheet" href="elegan.css">
@@ -77,15 +77,26 @@
           <dt>Main font: </dt><dd><a href="https://fonts.google.com/specimen/Merriweather" target="_blank">Merriweather</a></dd>
           <dt>Monospace font: </dt><dd><a href="https://fonts.google.com/specimen/Anonymous+Pro" target="_blank">Anonymous Pro</a></dd>
           <hr>          
-          <dt>Primary color: </dt><dd> <div class="color-swatch primary"></div> Marine Blue </dd>
+          <dt>Grey base: </dt><dd> <div class="color-swatch grey"></div> Grey basecolor </dd>
+          <dt>Primary color: </dt><dd> <div class="color-swatch primary"></div> Egeic blue </dd>
           <dt>Secondary color: </dt><dd> <div class="color-swatch secondary"></div> Coral Sea </dd>
           <dt>Accent color: </dt><dd><div class="color-swatch accent"></div> Pure Purper </dd>
-          <br>
-          <br>
+          
+          <dt>&nbsp;</dt><dd>&nbsp;</dd>
+          
           <dt>Info: </dt><dd> <div class="color-swatch info"></div> Blue </dd>
           <dt>Success: </dt><dd> <div class="color-swatch success"></div> Green </dd>
           <dt>Warning: </dt><dd><div class="color-swatch warning"></div> Yellow </dd>
           <dt>Danger: </dt><dd> <div class="color-swatch danger"></div> Red </dd>
+          
+          <dt>&nbsp;</dt><dd>&nbsp;</dd>
+          
+          <dt>Support-1</dt><dd> <div class="color-swatch support-1"></div> Cloud dancer </dd> 
+          <dt>Support-2</dt><dd> <div class="color-swatch support-2"></div> Hot Pink </dd> 
+          <dt>Support-3</dt><dd> <div class="color-swatch support-3"></div> Marine Blue </dd>
+          <dt>Support-4</dt><dd> <div class="color-swatch support-4"></div> Coral Sea </dd>
+          <dt>Support-5</dt><dd> <div class="color-swatch support-5"></div> Petrol Blue </dd>
+          <dt>Support-6</dt><dd> <div class="color-swatch support-6"></div> Flamengo </dd>
 
         </dl>    
       </article>            
@@ -94,14 +105,16 @@
       </figure>      
     </div>
     <div class="spacer"></div>
-    <h2 id="colorsystem"> 1. color system </h2>
-    <p>
-      Your colors are automagically recalculated for different scenarios like roll over events
-      You don't need to do nothing, and we're not using AI either, its just a well thought out solution 
-      with <code>color-mix</code>. Also, all colors are calculated in <a href="https://oklch.com/">OKlch</a>, which 
-      is a based color system that is based on the <em>perceived</em> color. Also it can do colors that other 
-      system can't even display. Which is even more awesome.
-    </p>
+    <h2 id="colorsystem"> 1. Color system </h2>
+    <article>
+      <p>
+        Your colors are automagically recalculated for different scenarios like roll over events
+        You don't need to do nothing, and we're not using AI either, its just a well thought out solution 
+        with <code>color-mix</code>. Also, all colors are calculated in <a href="https://oklch.com/">OKlch</a>, which 
+        is a based color system that is based on the <em>perceived</em> color. Also it can do colors that other 
+        system can't even display. Which is even more awesome.              
+      </p>
+    </article>
     <h3> <span class="inverted">Your</span> colors </h3>
     <div class="grid g4">
       <div class="card">
@@ -284,13 +297,18 @@
       </div>
     </div>
 
-    <br>
     <hr>
-    <br>
-    
+
     <h2 id="headers">2. Headers</h2>
-    <br 
-    <br>
+    
+    <article>
+      <p>
+        Balanced headers. <code>text-wrap: balance;</code> is here to finally have decent spaced headlines in your pages
+      </p>
+    </article>
+
+    <br><br><br>
+
     <h1> Header 1 </h1>
     <h2> Header 2 </h2>
     <h2 class="danger"> Header 2 </h2>
@@ -302,9 +320,9 @@
     <h5> Header 5 </h5>
     <h6> Header 6 </h6>
 
-    <br>
+    
     <hr>
-    <br>
+    
     <h2>3. Main text</h2>
     <br 
     <br>
@@ -315,7 +333,8 @@
 
           <h4>don't forget to add a <span class="inverted">catching quote</span></h4>
 
-          <p>I love Bootstrap. I have been using bootstrap since it infancy, and 
+          <p>
+            I love Bootstrap. I have been using bootstrap since it infancy, and 
             I think I have dreamt in bootstrap on more then one occasion.
             However, the world has moved on, since the days of <code>margin: auto</code> and <code>float: left</code>.
             I don't think I have to tell anyone that With the introduction of Flexbox and Grid, CSS has changed.
@@ -336,7 +355,10 @@
             It doesn't need to be backward compatible, because there is no backlog. You don't need to learn
             color theorie, because with oklhc all your color needs are taken care of and we simply calculate
             all derative colors you might require. 
-        </p>
+            <br>
+            Also: drop caps without float hacks 
+
+          </p>
 
       </div>
       <div>
@@ -632,7 +654,7 @@
         <div class="filler colored">g2-2-1</div>
         <div class="filler colored">g2-2-1</div>
       </div>
-      <h5>Four columns</h5>
+      <h5>Four columns</h5>      
       <div class="grid g2-1-1-1 colored">
         <div class="filler colored">g2-1-1-1</div>
         <div class="filler colored">g2-1-1-1</div>
@@ -703,29 +725,71 @@
   <br>
    
   <h1> Badges </h1>
+  <div class="badge">This is my callout, there are many like it, but this one is mine</div>
+  <div class="badge danger">This is my callout, there are many like it, but this one is mine</div>
 
   <br>
   <hr>
   <br>
    
   <h1> Callouts </h1>
-  
+  <div class="callout">This is my callout, there are many like it, but this one is mine</div>
+  <div class="callout danger">This is my callout, there are many like it, but this one is mine</div>
   <br>
   <hr>
   <br>
    
   <h1> Forms </h1>
+  <h2> Fieldsets </h2>
+  
+  <p>
+    <code class="codeblock html">
+  &lt;fieldset&gt;
+    &lt;legend&gt;Personalia:&lt;/legend&gt;
+    &lt;label for=&quot;fname&quot;&gt;First name:&lt;/label&gt;
+    &lt;input type=&quot;text&quot; value=&quot;this be my text&quot;/&gt;
+    &lt;label for=&quot;lname&quot;&gt;Last name:&lt;/label&gt;
+    &lt;input type=&quot;text&quot; value=&quot;this be my text&quot;/&gt;
+  &lt;/fieldset&gt;
+    </code>
+  </p>
+
+  <h2> Horizontal Forms </h2>
+
   <fieldset>
     <legend>Personalia:</legend>
-
-
+    
     <label for="fname">First name:</label>
     <input type="text" value="this be my text"/>
-
+    
     <label for="lname">Last name:</label>
     <input type="text" value="this be my text"/>
 
+    <label for="lremember">Remember me</label>
+    <input type="checkbox"/>
+    
+    <div> here is some extra info </div>
   </fieldset>
+
+  <h2> Vertical  Forms </h2>
+
+  <fieldset class="vertical">
+    <legend>Personalia:</legend>
+    
+    <label for="fname">First name:</label>
+    <input type="text" value="this be my text"/>
+    
+    <label for="lname">Last name:</label>
+    <input type="text" value="this be my text"/>
+
+    <label for="lremember">Remember me</label>
+    <input type="checkbox"/>
+
+    <div> here is some extra info </div>
+  </fieldset>
+
+  <h2> Stacked  Forms </h2>
+  <h2> Error  Forms </h2>
 
   <br>
   <hr>
@@ -756,8 +820,9 @@
   <textarea> this be my tekst area </textarea>
   <br>
 
-  <input datalist="my_datalist" placeholder="with datalist">
-  <datalist>
+  Datalist
+  <input list="my_datalist_choice" id="my_datalist_choice" name="my_datalist_choice" placeholder="with datalist">
+  <datalist id="my_datalist">
     <option>This</option>
     <option>Be</option>
     <option>My</option>
@@ -861,9 +926,8 @@
     <button>button</button>
   </div>  
 
-  <br>
-  <br>
-  <br>
+  <hr>
+
   <h1> Modal </h1>
   <button class="primary" commandfor="my_dialog"  command="show-modal">Open modal</button>
   <dialog id="my_dialog">
@@ -871,6 +935,35 @@
     <p> Dialog content </p>
     <footer>footer</footer>
   </dialog>
+  
+  <hr>
+
+  <h1> Images </h1>
+  <div class="grid g4">
+
+    <figure>
+      <img src="images/hepburn.jpg">
+      <figcaption>Default</figcaption>
+    </figure>    
+
+    <figure class="polaroid">
+      <img src="images/hepburn.jpg">
+      <figcaption>Polaroid</figcaption>
+    </figure>
+
+    <figure class="loom">
+      <img src="images/hepburn.jpg">
+      <figcaption>Loom</figcaption>
+    </figure>      
+    
+
+    <figure class="other">
+      <img src="images/hepburn.jpg">
+      <figcaption>TBA</figcaption>
+    </figure>
+  </div>
+
+  <br>
   <br>
   <br>
   <br>
